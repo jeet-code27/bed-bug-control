@@ -32,11 +32,11 @@ export default function ReviewsSlider() {
 
             {/* ── Background Image ── */}
             <Image
-                src="/images/review-bg.png"
+                src="/images/reviews-bg.png"
                 alt="Reviews Background"
                 fill
                 priority
-                className="object-cover object-top"
+                className="object-cover object-center"
             />
 
             {/* ── Green overlay ── */}

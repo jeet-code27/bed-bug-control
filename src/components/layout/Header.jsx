@@ -4,11 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
+    { label: "Problem", href: "#problem" },
     { label: "Process", href: "#process" },
-    { label: "Why Us", href: "#why-us" },
+    { label: "Treatments", href: "#treatments" },
+    { label: "Service Areas", href: "#areas-served" },
+    { label: "FAQ", href: "#faq" },
     { label: "Reviews", href: "#reviews" },
-    { label: "Pest Guide", href: "#pest-guide" },
-    { label: "Contact", href: "#contact" },
 ];
 
 const LeafLogo = () => (

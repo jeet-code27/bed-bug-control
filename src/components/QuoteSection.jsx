@@ -10,7 +10,7 @@ export default function QuoteSection() {
             <div className="bg-[#3d5a47] w-full px-8 lg:px-16 py-10">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
                     <h2 className="text-[#c9de6b] text-3xl lg:text-4xl font-bold leading-snug max-w-xl">
-                        Contact Us Now to Request a Free Estimate for Rodent Extermination
+                        Contact Us Now to Request a Free Estimate for Bed Bug Extermination
                     </h2>
                     <p className="text-white text-base font-medium whitespace-nowrap lg:ml-8 rounded-full border-2 border-[#0a802c] py-3 px-7 ">
                         View Our Rates
@@ -23,7 +23,7 @@ export default function QuoteSection() {
 
                 {/* Background image */}
                 <Image
-                    src="/images/quote-bg.png"
+                    src="/images/quotes-bg.png"
                     alt="Boston Van"
                     fill
                     className="object-cover object-center"

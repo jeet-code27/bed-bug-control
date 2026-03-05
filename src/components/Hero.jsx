@@ -8,7 +8,7 @@ export default function Hero() {
 
 
             <Image
-                src="/images/hero-banner.webp"
+                src="/images/bed-bug-banner.webp"
                 alt="Hero Background"
                 fill
                 priority
@@ -23,23 +23,28 @@ export default function Hero() {
 
                     {/* Tag */}
                     <p className="text-[#0a802c] text-[11px] font-semibold tracking-[3px] uppercase mb-3">
-                        Mice Extermination
+                        Active &amp; Preventative Services
                     </p>
 
                     {/* Heading */}
                     <h1 className="text-white text-5xl font-bold leading-tight mb-3">
-                        Mouse Extermination
+                        Bed Bugs MA
                     </h1>
 
                     {/* Sub heading */}
-                    <p className="text-white/75 text-base font-normal mb-8">
-                        Say goodbye to unwanted guests
+                    <p className="text-white/80 text-lg font-medium mb-3">
+                        Your Bed Bug Experts for Residential &amp; Commercial
+                    </p>
+
+                    {/* Notice */}
+                    <p className="inline-block bg-[#0a802c]/20 text-[#c9de6b] px-3 py-1.5 rounded text-sm font-semibold mb-8 border border-[#0a802c]/30">
+                        &quot;Boston Ranks #7 Nationally in Bed Bug Infestations&quot;
                     </p>
 
                     {/* CTA Buttons */}
                     <div className="flex flex-wrap items-center gap-3">
                         <button className="px-6 py-2.5 rounded-full border-2 border-white text-white text-sm font-semibold bg-transparent hover:bg-white hover:text-[#1b4332] transition-all duration-200 cursor-pointer whitespace-nowrap">
-                            Schedule Online
+                            Get a Fast &amp; Free Inspection
                         </button>
                         <button className="px-6 py-2.5 rounded-full bg-[#0a802c] hover:bg-[#2d6a4f] text-white text-sm font-semibold border-2 border-[#0a802c] hover:border-[#2d6a4f] transition-all duration-200 cursor-pointer whitespace-nowrap">
                             Call Today
