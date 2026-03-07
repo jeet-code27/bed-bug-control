@@ -6,18 +6,18 @@ import { useState } from "react";
 const REVIEWS = [
     {
         id: 1,
-        text: "Booking an appointment was incredibly straightforward. I was connected with a representative almost immediately, and the process was smooth from start to finish. I highly value their service and the comfort of a pest-free home!",
-        author: "Emma T.",
+        text: "We used another company that was not able to remove the bed bugs for my grandmother, and you did so with great success with the biological solution!",
+        author: "Paul S. - Boston",
     },
     {
         id: 2,
-        text: "Boston Pest Control exceeded my expectations! Their team is highly professional, punctual, and meticulous. We haven't had a single issue with pests since our first treatment. I strongly suggest them to anyone seeking reliable exterminators!",
-        author: "Michael B.",
+        text: "Thank you for providing heat and biological solutions for our retirement community!",
+        author: "Ruben H. - Worcester",
     },
     {
         id: 3,
-        text: "An outstanding company with an excellent team. They are always reliable, arrive right on time, and deliver undeniable results. Our property has remained completely clear of pests for over a year. Absolutely a phenomenal investment!",
-        author: "Olivia C.",
+        text: "We cannot thank you enough for providing an effective and discreet service for our household!",
+        author: "Claudia M. - Newton",
     },
 ];
 
