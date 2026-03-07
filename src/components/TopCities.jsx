@@ -32,15 +32,15 @@ export default function TopCities() {
                         Massachusetts is battling a severe bed bug problem. With Boston ranking #7 nationally for bed bug treatments, it's clear these pests are widespread and aggressive. If you live in or near any of these top-ranking cities, your risk of an infestation is significantly higher.
                     </p>
 
-                    <button className="self-start px-7 py-3 rounded-full bg-[#0a802c] hover:bg-[#1a5b32] text-white text-base font-semibold transition-colors duration-200 cursor-pointer">
-                        Get Local Help Now
-                    </button>
+                    <a href="#contact" className="self-start px-7 py-3 rounded-full bg-[#0a802c] hover:bg-[#1a5b32] text-white text-base font-semibold transition-colors duration-200 cursor-pointer no-underline">
+                        Fill out the form for free inspection
+                    </a>
                 </div>
 
                 <div className="w-full md:w-1/2">
                     <div className="bg-white rounded-2xl p-6 lg:p-10 shadow-xl flex flex-col gap-5">
                         <h3 className="text-[#1a1a1a] text-xl font-bold border-b border-gray-200 pb-4">
-                            National Infection Rankings (2025)
+                            National Infestation Rankings
                         </h3>
 
                         <div className="flex flex-col gap-3">

@@ -82,16 +82,7 @@ export default function BostonHeader() {
     return (
         <header className="fixed top-0 left-0 right-0 z-50">
 
-            {/* ── Announcement Bar ── */}
-            <div
-                className={`bg-[#d4ed91] flex items-center justify-center gap-4 px-6 text-[#1a3a2a] font-medium overflow-hidden transition-all duration-300 ${scrolled ? "max-h-0 py-0 opacity-0" : "max-h-16 py-2.5 opacity-100"
-                    }`}
-            >
-                <span className="text-[15px]">Seasonal Offer: Combine Services and Save $150 Now</span>
-                <button className="bg-[#0a802c] hover:bg-[#1b4332] text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors duration-200 whitespace-nowrap cursor-pointer">
-                    Claim Offer
-                </button>
-            </div>
+
 
             {/* ── Main Navbar ── */}
             <nav
@@ -127,16 +118,14 @@ export default function BostonHeader() {
 
                     {/* Phone CTA */}
                     <a
-                        href="tel:123654789"
+                        href="#contact"
+                        onClick={handleScroll}
                         className="hidden lg:inline-flex items-center ml-5 bg-[#0a802c] hover:bg-[#2d6a4f] text-white text-[15px] font-bold px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 no-underline whitespace-nowrap"
                     >
-                        (123) 456987
+                        Fill out the form for free inspection
                     </a>
 
-                    {/* User Icon */}
-                    <button className="hidden lg:flex ml-3 w-10 h-10 rounded-full bg-white/10 border border-white/25 items-center justify-center text-white hover:bg-white/20 transition-colors duration-200 cursor-pointer flex-shrink-0">
-                        <UserIcon />
-                    </button>
+
 
                     {/* ── Mobile Hamburger ── */}
                     <button
@@ -168,10 +157,11 @@ export default function BostonHeader() {
                         ))}
 
                         <a
-                            href="tel:123654789"
-                            className="mt-4 flex justify-center bg-[#0a802c] hover:bg-[#2d6a4f] text-white font-bold py-3 rounded-full text-base no-underline transition-colors duration-200"
+                            href="#contact"
+                            onClick={handleScroll}
+                            className="mt-4 flex justify-center bg-[#0a802c] hover:bg-[#2d6a4f] text-white font-bold py-3 rounded-full text-sm no-underline transition-colors duration-200"
                         >
-                            (123) 654-789
+                            Fill out the form for free inspection
                         </a>
                     </div>
                 </div>

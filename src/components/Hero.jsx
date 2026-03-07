@@ -43,12 +43,12 @@ export default function Hero() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-wrap items-center gap-3">
-                        <button className="px-6 py-2.5 rounded-full border-2 border-white text-white text-sm font-semibold bg-transparent hover:bg-white hover:text-[#1b4332] transition-all duration-200 cursor-pointer whitespace-nowrap">
-                            Get a Fast &amp; Free Inspection
-                        </button>
-                        <button className="px-6 py-2.5 rounded-full bg-[#0a802c] hover:bg-[#2d6a4f] text-white text-sm font-semibold border-2 border-[#0a802c] hover:border-[#2d6a4f] transition-all duration-200 cursor-pointer whitespace-nowrap">
-                            Call Today
-                        </button>
+                        <a
+                            href="#contact"
+                            className="px-6 py-3 rounded-full bg-[#0a802c] hover:bg-[#2d6a4f] text-white text-base font-semibold border-2 border-[#0a802c] hover:border-[#2d6a4f] transition-all duration-200 cursor-pointer whitespace-nowrap no-underline"
+                        >
+                            Fill out the form for free inspection
+                        </a>
                     </div>
 
                 </div>

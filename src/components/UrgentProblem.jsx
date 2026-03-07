@@ -15,16 +15,17 @@ export default function UrgentProblem() {
                     <h2 className="text-[#1a1a1a] text-3xl lg:text-4xl font-semibold leading-snug">
                         Are You Waking Up with Itchy Welts?
                     </h2>
-                    <p className="text-[#3a3a3a] text-lg leading-relaxed">
-                        There were <strong>over 1,400 confirmed bed bug reports in Boston in 2024 alone</strong> (Boston Public Health Commission).
-                    </p>
-                    <p className="text-[#3a3a3a] text-base leading-relaxed">
-                        If you woke up with itchy welts, see tiny blood stains on sheets, or found dark fecal spots — you likely have bed bugs. Don’t wait. They multiply incredibly fast, with a single female laying up to 500 eggs in her lifetime.
-                    </p>
+                    <ul className="list-disc list-outside ml-5 text-[#3a3a3a] text-base md:text-lg leading-relaxed space-y-2">
+                        <li>Bed bugs are hitchhikers</li>
+                        <li>They travel a long distance to feed</li>
+                        <li>Latch on to anyone nearby</li>
+                        <li>Bedbugs are active at night</li>
+                        <li>Killing the colonies is crucial to a healthy environment</li>
+                    </ul>
                     <div className="mt-4">
-                        <button className="px-7 py-3 rounded-full bg-[#0a802c] hover:bg-[#1a5b32] text-white text-base font-semibold shadow-md transition-all duration-200 cursor-pointer">
-                            Request Inspection Now
-                        </button>
+                        <a href="#contact" className="inline-block px-7 py-3 rounded-full bg-[#0a802c] hover:bg-[#1a5b32] text-white text-base font-semibold shadow-md transition-all duration-200 cursor-pointer no-underline">
+                            Fill out the form for free inspection
+                        </a>
                     </div>
                 </div>
 

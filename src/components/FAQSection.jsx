@@ -5,19 +5,19 @@ import { useState } from "react";
 const FAQS = [
     {
         q: "How much does bed bug extermination cost in Boston?",
-        a: "Bed bug extermination in Boston typically costs between $1,500–$4,000 depending on the size of your home and severity of infestation. A studio apartment averages $1,500–$2,200, while a 3-bedroom home runs $2,800–$4,000. Heat treatment (our specialty) costs more upfront but eliminates bed bugs in ONE visit with a 90-day guarantee—no repeat treatments needed. Chemical spray treatments may seem cheaper ($800–$1,200) but often require 3–4 visits and still fail 40% of the time. We offer same-day quotes and $150 off coupons for Boston residents."
+        a: "Contact us for a free inspection. Bed bug treatment costs vary depending on the number of rooms treated, and the type of service done, depending on the activity level."
     },
     {
         q: "Who is the best bed bug exterminator in Boston 2026?",
-        a: "We're rated #1 in Boston with 327 five-star Google reviews, an A+ BBB rating, and featured on NBC Boston and WBZ News. What makes us the best: (1) certified canine detection teams (97% accuracy), (2) whole-home heat treatment that kills all life stages in 8 hours, (3) 100% elimination guarantee or full refund, and (4) same-day service throughout Greater Boston including Back Bay, South End, Cambridge, Somerville, and Allston. We've treated over 2,400 Boston homes since 2012."
+        a: "There are few companies who provide the four services: a) Heat treatment b) Biological Solution c) Steam Cleaning & Chemical Solution and d) Standalone Treatment.  Companies who have these can meet your needs depending on activity levels and budget."
     },
     {
         q: "Does heat treatment really kill bed bugs in one day in Boston?",
-        a: "Yes—100%. Heat treatment raises every surface in your home to 120–135°F for 6–8 hours, which kills bed bugs, nymphs, and eggs instantly. Unlike sprays that bed bugs have become resistant to, heat penetrates walls, furniture, baseboards, and electrical outlets where bugs hide. Our Boston clients are bed-bug-free after ONE treatment with a 98.7% first-time success rate. We also include a 90-day warranty and free follow-up inspection."
+        a: "Heat is raised to 125-135 degrees for several hours, which kills bed bugs, nymphs and eggs.  While no one treatment is 100% full proof, we pair it with either a biological solution or a chemical solution for a residual and 3 month warranty, and free inspection."
     },
     {
         q: "Where are bed bugs worst in Boston right now?",
-        a: "According to Boston Public Health data (2024), the neighborhoods with highest bed bug activity are: Allston/Brighton (college rentals), South End (high-density apartments), Back Bay (Airbnb units), Fenway (student housing), Dorchester (multi-family homes), and East Boston (triple-deckers). MBTA Green and Red Line stations also report frequent sightings."
+        a: "According to Boston Public Health data (2024), the neighborhoods with highest bed bug activity are: Allston/Brighton (college rentals), South End (high-density apartments), Back Bay (Airbnb units), Fenway (student housing), Dorchester (multi-family homes), and East Boston (triple-deckers). MBTA Green and Red Line stations also report frequent sightings"
     },
     {
         q: "Can bed bugs live in Boston apartments with no pets?",
@@ -25,19 +25,11 @@ const FAQS = [
     },
     {
         q: "How do I know if I have bed bugs in my Boston apartment?",
-        a: "Look for these 5 signs: 1) Red, itchy welts in lines or clusters. 2) Tiny blood spots on sheets. 3) Dark brown/black fecal stains on mattress seams. 4) Shed skins. 5) Live bugs – apple seed-sized, reddish-brown. If you see even ONE sign, call for a free canine inspection. Our dogs detect infestations 30 days before humans can see them."
-    },
-    {
-        q: "What do bed bug bites look like on Black and Brown skin?",
-        a: "On darker skin tones, bed bug bites often appear as dark purple, brown, or hyperpigmented welts instead of bright red. They may look like raised bumps, hives, or darkened spots arranged in lines or clusters. The itching is the same. Many Boston residents of color mistake bites for eczema, allergic reactions, or razor burn. If bites appear after sleeping and are grouped in 3s ('breakfast, lunch, dinner' pattern), assume bed bugs until proven otherwise."
-    },
-    {
-        q: "Will my landlord pay for bed bug treatment in Boston?",
-        a: "Yes, by law. Massachusetts General Law Chapter 239, Section 8A and the State Sanitary Code (105 CMR 410) require landlords to provide pest-free housing. If bed bugs are NOT your fault (you didn't bring infested furniture), your landlord MUST pay for professional extermination within 5 days of notice. Document everything! We work directly with landlords and property managers daily."
+        a: "Look for these 5 signs: 1) Red, itchy welts in lines or clusters. 2) Tiny blood spots on sheets. 3) Dark brown/black fecal stains on mattress seams. 4) Shed skins. 5) Live bugs – apple seed-sized, reddish-brown.  If you see even ONE sign, contact us for a FREE inspection."
     },
     {
         q: "How fast can you come to Back Bay/South End for bed bugs?",
-        a: "We offer same-day and next-day service throughout Back Bay, South End, and all Boston neighborhoods. Call before 10 AM and we can often inspect same day. Our canine team is dispatched from our Dedham facility and covers all of Greater Boston within 45–90 minutes. For heat treatment, we book within 24–72 hours depending on severity. Emergency weekend service is available."
+        a: "We offer same-day and next-day service throughout Back Bay, South End, and all Boston neighborhoods. Fill out the form before 10 AM and we can often inspect same day. Our canine team is dispatched from our Dedham facility and covers all of Greater Boston within 45–90 minutes. For heat treatment, we book within 24–72 hours depending on severity. Emergency weekend service is available."
     },
     {
         q: "Do you offer canine bed bug inspections in Cambridge and Somerville?",
@@ -69,11 +61,11 @@ const FAQS = [
     },
     {
         q: "Do you service Boston suburbs like Brookline, Newton, and Quincy?",
-        a: "Yes! We serve all Greater Boston communities including: Brookline, Newton, Needham, Wellesley, Quincy, Braintree, Weymouth, Milton, Waltham, Watertown, Belmont, Arlington, Medford, Malden, Everett, Revere, Dedham, West Roxbury, Roslindale, Hyde Park. Same-day service, same guarantees, same pricing."
+        a: "Yes! We serve all Greater Boston communities including: Brookline, Newton, Needham, Wellesley, Quincy, Braintree, Milton, Waltham, Watertown, Belmont, Arlington, Dedham, West Roxbury, Roslindale, Hyde Park. Same-day service, same guarantees, same pricing."
     },
     {
         q: "Hey Siri, find bed bug exterminator open now near Fenway Park",
-        a: "We're open 24/7 with live answer! Call (617) 555-BUGS right now. Our dispatch center near Fenway can send a canine inspection team to your Fenway, Kenmore, or Longwood apartment within 90 minutes. We serve all neighborhoods around Fenway Park including Mission Hill, Roxbury Crossing, and the Fens. Same-day treatment slots available."
+        a: "We're open 24/7 with live answer! Fill out the form for free inspection right now. Our dispatch center near Fenway can send a canine inspection team to your Fenway, Kenmore, or Longwood apartment within 90 minutes. We serve all neighborhoods around Fenway Park including Mission Hill, and Roxbury Crossing. Same-day treatment slots available."
     }
 ];
 

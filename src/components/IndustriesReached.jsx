@@ -96,9 +96,9 @@ export default function IndustriesReached() {
 
                     {/* CTA */}
                     <div className="mt-2">
-                        <button className="px-7 py-3 rounded-full bg-[#0a802c] text-white text-base font-semibold border-2 border-[#0a802c] hover:bg-[#1a5b32] hover:border-[#1a5b32] transition-colors duration-200 cursor-pointer">
-                            Request Commercial Quote
-                        </button>
+                        <a href="#contact" className="inline-block px-7 py-3 rounded-full bg-[#0a802c] text-white text-base font-semibold border-2 border-[#0a802c] hover:bg-[#1a5b32] hover:border-[#1a5b32] transition-colors duration-200 cursor-pointer no-underline">
+                            Fill out the form for free inspection
+                        </a>
                     </div>
 
                 </div>

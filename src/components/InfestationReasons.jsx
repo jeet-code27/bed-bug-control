@@ -57,9 +57,9 @@ export default function InfestationReasons() {
 
                     {/* CTA */}
                     <div className="mt-6">
-                        <button className="px-7 py-3 rounded-full border-2 border-[#0a802c] text-[#1a1a1a] text-base font-semibold bg-transparent hover:bg-[#0a802c] hover:text-white transition-all duration-200 cursor-pointer">
-                            Schedule Free Inspection
-                        </button>
+                        <a href="#contact" className="inline-block px-7 py-3 rounded-full border-2 border-[#0a802c] text-[#1a1a1a] text-base font-semibold bg-transparent hover:bg-[#0a802c] hover:text-white transition-all duration-200 cursor-pointer no-underline">
+                            Fill out the form for free inspection
+                        </a>
                     </div>
 
                 </div>

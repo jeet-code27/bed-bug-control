@@ -29,7 +29,7 @@ export default function TreatmentTypes() {
                 {/* Heading */}
                 <div className="text-center mb-12">
                     <h2 className="text-[#1a1a1a] text-3xl lg:text-4xl font-semibold leading-snug">
-                        Type of Treatments We Offer
+                        Type of Treatments Offered
                     </h2>
                     <div className="mt-4 w-20 h-1 bg-[#0a802c] mx-auto rounded-full" />
                 </div>

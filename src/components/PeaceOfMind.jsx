@@ -21,8 +21,8 @@ export default function PeaceOfMind() {
 
                 {/* Heading */}
                 <h2 className="text-[#1a1a1a] text-3xl lg:text-5xl font-bold leading-tight mb-5">
-                    Rely on the Bug Experts,{" "}
-                    <span className="text-[#0a802c]">That&apos;s Us.</span>
+                    Rely on the Bug Experts
+                    <span className="text-[#0a802c]"></span>
                 </h2>
 
                 {/* Subtext */}
@@ -31,9 +31,9 @@ export default function PeaceOfMind() {
                 </p>
 
                 {/* CTA Button */}
-                <button className="px-8 py-3.5 rounded-full bg-[#0a802c] hover:bg-[#076622] text-white text-base font-bold transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer">
-                    Book Now!
-                </button>
+                <a href="#contact" className="inline-block px-8 py-3.5 rounded-full bg-[#0a802c] hover:bg-[#076622] text-white text-base font-bold transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer no-underline">
+                    Fill out the form for free inspection
+                </a>
 
             </div>
         </section>

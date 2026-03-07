@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import UrgentProblem from "@/components/UrgentProblem";
-import ThreeStepProcess from "@/components/ThreeStepProcess";
+// import ThreeStepProcess from "@/components/ThreeStepProcess";
 import QuoteSection from "@/components/QuoteSection";
 import ReviewsSlider from "@/components/ReviewsSlider";
 import PeaceOfMind from "@/components/PeaceOfMind";
@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Hero />
       <UrgentProblem />
-      <ThreeStepProcess />
+      {/* <ThreeStepProcess /> */}
       <TreatmentTypes />
       <InfestationReasons />
       <QuoteSection />

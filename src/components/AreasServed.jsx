@@ -2,14 +2,12 @@
 
 const NEIGHBORHOODS = [
     "Back Bay", "South End", "Fenway", "Allston/Brighton", "Dorchester",
-    "East Boston", "Mission Hill", "Roxbury Crossing", "The Fens", "Kenmore", "Longwood"
+    "East Boston", "Mission Hill", "Roxbury Crossing", "Kenmore", "Longwood"
 ];
 
 const MA_CITIES = [
     "Boston", "Cambridge", "Somerville", "Brookline", "Newton", "Needham",
-    "Wellesley", "Quincy", "Braintree", "Weymouth", "Milton", "Waltham",
-    "Watertown", "Belmont", "Arlington", "Medford", "Malden", "Everett",
-    "Revere", "Dedham", "West Roxbury", "Roslindale", "Hyde Park"
+    "Watertown", "Belmont", "Arlington", "Dedham", "West Roxbury", "Roslindale", "Hyde Park"
 ];
 
 export default function AreasServed() {
@@ -34,7 +32,7 @@ export default function AreasServed() {
 
                 <div>
                     <h2 className="text-[#1a1a1a] text-3xl font-semibold mb-8">
-                        All Massachusetts Cities Served
+                        Massachusetts Cities Served
                     </h2>
                     <div className="flex flex-wrap justify-center gap-3">
                         {MA_CITIES.map(city => (
