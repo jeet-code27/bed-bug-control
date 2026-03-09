@@ -13,7 +13,7 @@ const LeafLogo = () => (
 
 const FOOTER_LINKS = [
     { label: "Problem", href: "#problem" },
-    { label: "Process", href: "#process" },
+    // { label: "Process", href: "#process" },
     { label: "Treatments", href: "#treatments" },
     { label: "Service Areas", href: "#areas-served" },
     { label: "FAQ", href: "#faq" },
@@ -117,6 +117,13 @@ export default function Footer() {
                             <circle cx="12" cy="10" r="3" />
                         </svg>
                         <span>Serving Boston and Greater Boston Area</span>
+                    </div>
+                    <div className="flex items-start gap-3 text-sm text-white/65 mt-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 flex-shrink-0 text-[#0a802c]">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>867 Boylston St Floor 5 PMB 275<br />Boston, MA 02116</span>
                     </div>
 
                     {/* CTA */}

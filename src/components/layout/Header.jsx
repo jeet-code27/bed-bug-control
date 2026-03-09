@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NAV_LINKS = [
     { label: "Problem", href: "#problem" },
-    { label: "Process", href: "#process" },
+    // { label: "Process", href: "#process" },
     { label: "Treatments", href: "#treatments" },
     { label: "Service Areas", href: "#areas-served" },
     { label: "FAQ", href: "#faq" },
@@ -97,7 +97,7 @@ export default function BostonHeader() {
                     <Link href="/" className="flex items-center gap-2.5 mr-auto no-underline">
                         <LeafLogo />
                         <span className="text-white text-xl font-black tracking-[3px] uppercase select-none">
-                            Boston
+                            Bed Bugs Boston
                         </span>
                     </Link>
 
