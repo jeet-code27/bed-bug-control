@@ -12,7 +12,7 @@ export default function QuoteSection() {
                     <h2 className="text-[#c9de6b] text-3xl lg:text-4xl font-bold leading-snug max-w-xl">
                         Contact Us Now to Request a Free Estimate for Bed Bug Service
                     </h2>
-                   
+
                 </div>
             </div>
 
@@ -42,101 +42,115 @@ export default function QuoteSection() {
                     </p>
 
                     {/* Fields grid */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="d73a3fd1-d0ad-4b3c-aa30-f162638e399a" />
+                        <div className="grid grid-cols-2 gap-4">
 
-                        {/* First Name */}
-                        <div className="flex flex-col gap-1">
-                            <label className="text-sm font-medium text-[#1a1a1a]">
-                                First Name <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
-                            />
+                            {/* First Name */}
+                            <div className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-[#1a1a1a]">
+                                    First Name <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    name="first_name"
+                                    required
+                                    className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
+                                />
+                            </div>
+
+                            {/* Last Name */}
+                            <div className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-[#1a1a1a]">
+                                    Last Name <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    name="last_name"
+                                    required
+                                    className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
+                                />
+                            </div>
+
+                            {/* Phone Number */}
+                            <div className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-[#1a1a1a]">
+                                    Phone Number <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    required
+                                    className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
+                                />
+                            </div>
+
+                            {/* Email */}
+                            <div className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-[#1a1a1a]">
+                                    Email <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required
+                                    className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
+                                />
+                            </div>
+
+                            {/* Zip Code */}
+                            <div className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-[#1a1a1a]">
+                                    Zip Code <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    name="zip_code"
+                                    required
+                                    className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
+                                />
+                            </div>
+
+                            {/* Pest Concerns */}
+                            <div className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-[#1a1a1a]">
+                                    Pest Concerns
+                                </label>
+                                <input
+                                    type="text"
+                                    name="pest_concerns"
+                                    className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
+                                />
+                            </div>
+
                         </div>
 
-                        {/* Last Name */}
-                        <div className="flex flex-col gap-1">
-                            <label className="text-sm font-medium text-[#1a1a1a]">
-                                Last Name <span className="text-red-500">*</span>
+                        {/* Disclaimer */}
+                        <p className="text-[#777] text-[11px] leading-relaxed mt-5">
+                            By clicking &quot;Submit,&quot; I give my electronic signature and consent that Boston may contact me via email, autodialer,
+                            or prerecorded messages. Consent is not required for purchase. Promotions are subject to local service pricing and may
+                            not apply to some services. This site is protected by reCAPTCHA and the Google{" "}
+                            <span className="text-[#0a802c] underline cursor-pointer">Privacy Policy</span> and{" "}
+                            <span className="text-[#0a802c] underline cursor-pointer">Terms of Service</span> apply.
+                            View our <span className="text-[#0a802c] underline cursor-pointer">Terms of Service</span> and{" "}
+                            <span className="text-[#0a802c] underline cursor-pointer">Privacy Policy</span>.
+                        </p>
+
+                        {/* Checkbox */}
+                        <div className="flex items-start gap-2 mt-4">
+                            <input type="checkbox" name="sms_consent" id="sms-consent" className="mt-0.5 accent-[#0a802c] cursor-pointer" />
+                            <label htmlFor="sms-consent" className="text-[11px] text-[#777] leading-relaxed cursor-pointer">
+                                I agree to receive recurring automated text messages at the phone number provided. Msg &amp; data rates may apply.
+                                Msg frequency varies. Mobile phone information is stored securely and will not be shared with third parties or
+                                affiliates for marketing or promotional purposes. Reply HELP for help and STOP to cancel.
                             </label>
-                            <input
-                                type="text"
-                                className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
-                            />
                         </div>
 
-                        {/* Phone Number */}
-                        <div className="flex flex-col gap-1">
-                            <label className="text-sm font-medium text-[#1a1a1a]">
-                                Phone Number <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="tel"
-                                className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
-                            />
-                        </div>
-
-                        {/* Email */}
-                        <div className="flex flex-col gap-1">
-                            <label className="text-sm font-medium text-[#1a1a1a]">
-                                Email <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="email"
-                                className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
-                            />
-                        </div>
-
-                        {/* Zip Code */}
-                        <div className="flex flex-col gap-1">
-                            <label className="text-sm font-medium text-[#1a1a1a]">
-                                Zip Code <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
-                            />
-                        </div>
-
-                        {/* Pest Concerns */}
-                        <div className="flex flex-col gap-1">
-                            <label className="text-sm font-medium text-[#1a1a1a]">
-                                Pest Concerns
-                            </label>
-                            <input
-                                type="text"
-                                className="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors"
-                            />
-                        </div>
-
-                    </div>
-
-                    {/* Disclaimer */}
-                    <p className="text-[#777] text-[11px] leading-relaxed mt-5">
-                        By clicking &quot;Submit,&quot; I give my electronic signature and consent that Boston may contact me via email, autodialer,
-                        or prerecorded messages. Consent is not required for purchase. Promotions are subject to local service pricing and may
-                        not apply to some services. This site is protected by reCAPTCHA and the Google{" "}
-                        <span className="text-[#0a802c] underline cursor-pointer">Privacy Policy</span> and{" "}
-                        <span className="text-[#0a802c] underline cursor-pointer">Terms of Service</span> apply.
-                        View our <span className="text-[#0a802c] underline cursor-pointer">Terms of Service</span> and{" "}
-                        <span className="text-[#0a802c] underline cursor-pointer">Privacy Policy</span>.
-                    </p>
-
-                    {/* Checkbox */}
-                    <div className="flex items-start gap-2 mt-4">
-                        <input type="checkbox" id="sms-consent" className="mt-0.5 accent-[#0a802c] cursor-pointer" />
-                        <label htmlFor="sms-consent" className="text-[11px] text-[#777] leading-relaxed cursor-pointer">
-                            I agree to receive recurring automated text messages at the phone number provided. Msg &amp; data rates may apply.
-                            Msg frequency varies. Mobile phone information is stored securely and will not be shared with third parties or
-                            affiliates for marketing or promotional purposes. Reply HELP for help and STOP to cancel.
-                        </label>
-                    </div>
-
-                    {/* Submit */}
-                    <button className="mt-6 px-8 py-3 rounded-full bg-[#0a802c] hover:bg-[#076622] text-white text-sm font-semibold transition-colors duration-200 cursor-pointer">
-                        Submit
-                    </button>
+                        {/* Submit */}
+                        <button type="submit" className="mt-6 px-8 py-3 rounded-full bg-[#0a802c] hover:bg-[#076622] text-white text-sm font-semibold transition-colors duration-200 cursor-pointer">
+                            Submit
+                        </button>
+                    </form>
 
                 </div>
             </div>

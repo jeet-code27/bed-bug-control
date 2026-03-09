@@ -44,7 +44,8 @@
                         <line x1="20" y1="30" x2="20" y2="22" stroke="#2d6a4f" stroke-width="1.5"
                             stroke-linecap="round" />
                     </svg>
-                    <span class="text-white text-xl font-black tracking-[3px] uppercase select-none">Bed Bugs Boston</span>
+                    <span class="text-white text-xl font-black tracking-[3px] uppercase select-none">Bed Bugs
+                        Boston</span>
                 </a>
 
                 <!-- Desktop Nav -->
@@ -345,41 +346,42 @@
                 <h3 class="text-[#1a1a1a] text-2xl font-bold text-center mb-1">Complete the Information Below for Your
                     Estimate</h3>
                 <p class="text-[#555] text-sm text-center mb-6">Our team will reach out shortly!</p>
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="d73a3fd1-d0ad-4b3c-aa30-f162638e399a" />
                     <div class="grid grid-cols-2 gap-4">
                         <div class="flex flex-col gap-1">
                             <label class="text-sm font-medium text-[#1a1a1a]">First Name <span
                                     class="text-red-500">*</span></label>
-                            <input type="text"
+                            <input type="text" name="first_name" required
                                 class="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors" />
                         </div>
                         <div class="flex flex-col gap-1">
                             <label class="text-sm font-medium text-[#1a1a1a]">Last Name <span
                                     class="text-red-500">*</span></label>
-                            <input type="text"
+                            <input type="text" name="last_name" required
                                 class="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors" />
                         </div>
                         <div class="flex flex-col gap-1">
                             <label class="text-sm font-medium text-[#1a1a1a]">Phone Number <span
                                     class="text-red-500">*</span></label>
-                            <input type="tel"
+                            <input type="tel" name="phone" required
                                 class="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors" />
                         </div>
                         <div class="flex flex-col gap-1">
                             <label class="text-sm font-medium text-[#1a1a1a]">Email <span
                                     class="text-red-500">*</span></label>
-                            <input type="email"
+                            <input type="email" name="email" required
                                 class="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors" />
                         </div>
                         <div class="flex flex-col gap-1">
                             <label class="text-sm font-medium text-[#1a1a1a]">Zip Code <span
                                     class="text-red-500">*</span></label>
-                            <input type="text"
+                            <input type="text" name="zip_code" required
                                 class="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors" />
                         </div>
                         <div class="flex flex-col gap-1">
                             <label class="text-sm font-medium text-[#1a1a1a]">Pest Concerns</label>
-                            <input type="text"
+                            <input type="text" name="pest_concerns"
                                 class="border border-[#ddd] rounded-lg px-3 py-2.5 text-sm bg-[#f9f9f9] focus:outline-none focus:border-[#0a802c] transition-colors" />
                         </div>
                     </div>
@@ -395,7 +397,8 @@
                         <span class="text-[#0a802c] underline cursor-pointer">Privacy Policy</span>.
                     </p>
                     <div class="flex items-start gap-2 mt-4">
-                        <input type="checkbox" id="sms-consent" class="mt-0.5 accent-[#0a802c] cursor-pointer" />
+                        <input type="checkbox" name="sms_consent" id="sms-consent"
+                            class="mt-0.5 accent-[#0a802c] cursor-pointer" />
                         <label for="sms-consent" class="text-[11px] text-[#777] leading-relaxed cursor-pointer">
                             I agree to receive recurring automated text messages at the phone number provided. Msg &amp;
                             data rates may apply.
