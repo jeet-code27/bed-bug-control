@@ -13,7 +13,7 @@ export default function UrgentProblem() {
                         Urgent Problem Recognition
                     </p>
                     <h2 className="text-[#1a1a1a] text-3xl lg:text-4xl font-semibold leading-snug">
-                        Are You Waking Up with Itchy Welts?
+                        Are You Waking Up with Itchy Bites?
                     </h2>
                     <ul className="list-disc list-outside ml-5 text-[#3a3a3a] text-base md:text-lg leading-relaxed space-y-2">
                         <li>Bed bugs are hitchhikers</li>

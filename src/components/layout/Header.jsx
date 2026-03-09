@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
     { label: "Problem", href: "#problem" },
@@ -12,20 +13,7 @@ const NAV_LINKS = [
     { label: "Reviews", href: "#reviews" },
 ];
 
-const LeafLogo = () => (
-    <svg width="38" height="38" viewBox="0 0 40 40" fill="none">
-        <circle cx="20" cy="20" r="20" fill="#0a802c" />
-        <path
-            d="M20 8C14 8 10 14 10 20c0 4.4 2.4 8.2 6 10.2V24c0-3.3 2.7-6 6-6h4c0-5.5-2.7-10-6-10z"
-            fill="#74c69d"
-        />
-        <path
-            d="M22 18c-3.3 0-6 2.7-6 6v6.2C17.3 31.4 18.6 32 20 32c5.5 0 10-4.5 10-10v-4h-8z"
-            fill="#52b788"
-        />
-        <line x1="20" y1="30" x2="20" y2="22" stroke="#2d6a4f" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-);
+
 
 const ChevronDown = () => (
     <svg
@@ -94,9 +82,16 @@ export default function BostonHeader() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center h-[72px]">
 
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2.5 mr-auto no-underline">
-                        <LeafLogo />
-                        <span className="text-white text-xl font-black tracking-[3px] uppercase select-none">
+                    <Link href="/" className="flex items-center mr-auto no-underline">
+                        <Image
+                            src="/images/bed-bugs-boston-logo.png"
+                            alt="Bed Bugs Boston Logo"
+                            width={160}
+                            height={160}
+                            priority
+                            className="h-[120px] w-auto shrink-0"
+                        />
+                        <span className="text-white text-base sm:text-lg md:text-xl font-black tracking-[1px] sm:tracking-[2px] md:tracking-[3px] uppercase select-none leading-tight">
                             Bed Bugs Boston
                         </span>
                     </Link>

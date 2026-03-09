@@ -32,10 +32,6 @@ const FAQS = [
         a: "We offer same-day and next-day service throughout Back Bay, South End, and all Boston neighborhoods. Fill out the form before 10 AM and we can often inspect same day. Our canine team is dispatched from our Dedham facility and covers all of Greater Boston within 45–90 minutes. For heat treatment, we book within 24–72 hours depending on severity. Emergency weekend service is available."
     },
     {
-        q: "Do you offer canine bed bug inspections in Cambridge and Somerville?",
-        a: "Yes! Our certified K-9 detection team services all of Cambridge (Harvard Square, Central, Kendall, Porter), Somerville (Davis, Union, Teele Square), and surrounding communities. Dogs detect live bed bugs and viable eggs with 97% accuracy—far better than visual inspections. The inspection takes 30–45 minutes and includes a written report. Cambridge and Somerville inspections are FREE with same-day treatment booking."
-    },
-    {
         q: "Is one heat treatment enough for Boston row houses and triple-deckers?",
         a: "Yes—our heat treatment system is specifically designed for Boston's classic architecture. We treat triple-deckers, brownstones, and row houses daily. Our equipment heats all three floors simultaneously, and we seal shared walls to prevent bugs from escaping to neighboring units. Our treatment is 98.7% effective even as a standalone service."
     },
@@ -63,10 +59,6 @@ const FAQS = [
         q: "Do you service Boston suburbs like Brookline, Newton, and Quincy?",
         a: "Yes! We serve all Greater Boston communities including: Brookline, Newton, Needham, Wellesley, Quincy, Braintree, Milton, Waltham, Watertown, Belmont, Arlington, Dedham, West Roxbury, Roslindale, Hyde Park. Same-day service, same guarantees, same pricing."
     },
-    {
-        q: "Hey Siri, find bed bug exterminator open now near Fenway Park",
-        a: "We're open 24/7 with live answer! Fill out the form for free inspection right now. Our dispatch center near Fenway can send a canine inspection team to your Fenway, Kenmore, or Longwood apartment within 90 minutes. We serve all neighborhoods around Fenway Park including Mission Hill, and Roxbury Crossing. Same-day treatment slots available."
-    }
 ];
 
 export default function FAQSection() {
