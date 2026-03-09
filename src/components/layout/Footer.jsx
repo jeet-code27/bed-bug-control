@@ -66,7 +66,7 @@ export default function Footer() {
                             alt="Bed Bugs Boston Logo"
                             width={200}
                             height={200}
-                            className="h-[90px] w-auto"
+                            className="h-[70px] w-auto"
                         />
                         <span className="text-white text-base sm:text-lg font-black tracking-[1px] sm:tracking-[3px] uppercase">Bed Bugs Boston</span>
                     </Link>
