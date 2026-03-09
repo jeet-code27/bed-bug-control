@@ -68,7 +68,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-4">
                     <Link href="/" className="flex items-center gap-2.5 no-underline">
                         <LeafLogo />
-                        <span className="text-white text-lg font-black tracking-[3px] uppercase">Boston</span>
+                        <span className="text-white text-lg font-black tracking-[3px] uppercase">Bed Bugs Boston</span>
                     </Link>
                     <p className="text-white/60 text-sm leading-relaxed">
                         Reliable extermination experts dedicated to your peace of mind. Keeping your property safe from pests, all year round.
