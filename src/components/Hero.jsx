@@ -28,7 +28,7 @@ export default function Hero() {
 
                     {/* Heading */}
                     <h1 className="text-white text-5xl font-bold leading-tight mb-3">
-                        Bed Bugs MA
+                        Bed Bugs Boston
                     </h1>
 
                     {/* Sub heading */}
