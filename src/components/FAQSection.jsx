@@ -9,11 +9,11 @@ const FAQS = [
     },
     {
         q: "Who is the best bed bug exterminator in Boston 2026?",
-        a: "There are few companies who provide the four services: a) Heat treatment b) Biological Solution c) Steam Cleaning & Chemical Solution and d) Standalone Treatment.  Companies who have these can meet your needs depending on activity levels and budget."
+        a: "There are few companies who provide these services: a) Biological Solution with a 90 day residual. b) Steam Heat Solution. c) Standalone Chemical Treatment.  Companies who have these can meet your needs depending on activity levels and budget."
     },
     {
-        q: "Does heat treatment really kill bed bugs in one day in Boston?",
-        a: "Heat is raised to 125-135 degrees for several hours, which kills bed bugs, nymphs and eggs.  While no one treatment is 100% full proof, we pair it with either a biological solution or a chemical solution for a residual and 3 month warranty, and free inspection."
+        q: "Does Steam Heat Treatment really kill bed bugs in one day in Boston?",
+        a: "The Gold Standard for Infestations, we vacuum infested areas first and then provide the steam heat treatment solution.  The steam heat is raised to 212 degrees and targeted to certain areas to kill the bed bugs, nymphs and eggs.  While no one treatment is 100% full proof, we pair it with a chemical solution and/or biological solution for a 90-day residual, and a free inspection."
     },
     {
         q: "Where are bed bugs worst in Boston right now?",
@@ -28,16 +28,16 @@ const FAQS = [
         a: "Look for these 5 signs: 1) Red, itchy welts in lines or clusters. 2) Tiny blood spots on sheets. 3) Dark brown/black fecal stains on mattress seams. 4) Shed skins. 5) Live bugs – apple seed-sized, reddish-brown.  If you see even ONE sign, contact us for a FREE inspection."
     },
     {
-        q: "How fast can you come to Back Bay/South End for bed bugs?",
-        a: "We offer same-day and next-day service throughout Back Bay, South End, and all Boston neighborhoods. Fill out the form before 10 AM and we can often inspect same day. Our canine team is dispatched from our Dedham facility and covers all of Greater Boston within 45–90 minutes. For heat treatment, we book within 24–72 hours depending on severity. Emergency weekend service is available."
+        q: "How fast can you come to Boston?",
+        a: "We offer a free inspection within 48 hours of filling out this form."
     },
     {
-        q: "Is one heat treatment enough for Boston row houses and triple-deckers?",
-        a: "Yes—our heat treatment system is specifically designed for Boston's classic architecture. We treat triple-deckers, brownstones, and row houses daily. Our equipment heats all three floors simultaneously, and we seal shared walls to prevent bugs from escaping to neighboring units. Our treatment is 98.7% effective even as a standalone service."
+        q: "Is one steam heat treatment enough for Boston row houses and triple-deckers?",
+        a: "Yes—our heat treatment system is specifically designed for Boston's classic architecture. We treat triple-deckers, brownstones, and row houses daily. Our equipment can treat all three floors on the same day."
     },
     {
         q: "Are your bed bug treatments safe for babies and pregnant women in Boston?",
-        a: "Absolutely. Our heat treatment uses ZERO chemicals—just temperature. It's 100% safe for infants, pregnant women, elderly residents, and pets. You'll need to vacate for 8–10 hours during treatment (great time for a day trip to the Boston Common or Seaport!), but you can return the same evening. No lingering fumes, no toxic residue, no health risks."
+        a: "Absolutely. Our steam heat treatment can be used with ZERO chemicals—just temperature and our biological solution for a 90-day residual. It's 100% safe for infants, pregnant women, elderly residents, and pets. You'll need to vacate for 8–10 hours during treatment (great time for a day trip to the Boston Common or Seaport!), but you can return the same evening. No lingering fumes, no toxic residue, no health risks."
     },
     {
         q: "How long do I have to stay out of my Boston apartment after treatment?",
@@ -48,17 +48,10 @@ const FAQS = [
         a: "Yes—this is extremely common in Boston's connected housing. Bed bugs travel through wall voids, electrical conduits, pipes, and even baseboards between units. If your neighbor has bed bugs and doesn't treat them, you're at high risk. Many Boston property managers now require building-wide heat treatments to prevent reinfestation."
     },
     {
-        q: "What's the success rate of your Boston bed bug heat treatment?",
-        a: "98.7% elimination after one treatment with our 90-day guarantee. The 1.3% that need follow-up are usually cases where residents brought in new infested items or neighbors weren't treated. Our heat protocol meets Entomological Society standards (120°F+ for 90 minutes kills all stages). We've treated over 2,400 Boston-area properties since 2012."
-    },
-    {
         q: "Can you treat just one room or do you have to do the whole apartment in Boston?",
         a: "We strongly recommend whole-apartment treatment. Bed bugs travel—if they're in your bedroom, they're likely also in your living room furniture, closets, and baseboards. Treating just one room pushes them into untreated areas, and they'll return in 3–4 weeks. Whole-apartment heat treatment actually SAVES money by preventing re-treatment."
     },
-    {
-        q: "Do you service Boston suburbs like Brookline, Newton, and Quincy?",
-        a: "Yes! We serve all Greater Boston communities including: Brookline, Newton, Needham, Wellesley, Quincy, Braintree, Milton, Waltham, Watertown, Belmont, Arlington, Dedham, West Roxbury, Roslindale, Hyde Park. Same-day service, same guarantees, same pricing."
-    },
+  
 ];
 
 export default function FAQSection() {

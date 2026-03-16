@@ -4,12 +4,8 @@ import Image from "next/image";
 
 const TREATMENTS = [
     {
-        title: "Heat Treatment",
-        description: "**Pair with biological or chemical solution.** Best for Infestations. Kills all life stages instantly. THE GOLD STANDARD.",
-    },
-    {
-        title: "Steam & Chemical",
-        description: "Best for Infestations. High heat steam combined with powerful chemical solutions.",
+        title: "Steam Heat Treatment",
+        description: "Best for Infestations! Includes vacuum of infested bed bugs, nymphs and eggs. High heat steam combined with Chemical solutions and/or biological treatment for a 90-day residual. It kills all life stages. Steam Heat is the Gold Standard.",
     },
     {
         title: "Aprehend Biological",
@@ -34,8 +30,8 @@ export default function TreatmentTypes() {
                     <div className="mt-4 w-20 h-1 bg-[#0a802c] mx-auto rounded-full" />
                 </div>
 
-                {/* 4 Boxes Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* 3 Boxes Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {TREATMENTS.map((treatment, index) => (
                         <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col gap-4 hover:shadow-md transition-shadow">
                             <h3 className="text-[#1a1a1a] text-xl font-bold">
