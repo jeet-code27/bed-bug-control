@@ -6,12 +6,13 @@ import Image from "next/image";
 
 
 const FOOTER_LINKS = [
-    { label: "Problem", href: "#problem" },
-    // { label: "Process", href: "#process" },
-    { label: "Treatments", href: "#treatments" },
-    { label: "Service Areas", href: "#areas-served" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Reviews", href: "#reviews" },
+    { label: "Problem", href: "/#problem" },
+    // { label: "Process", href: "/#process" },
+    { label: "Treatments", href: "/#treatments" },
+    { label: "Service Areas", href: "/#areas-served" },
+    { label: "FAQ", href: "/#faq" },
+    { label: "Reviews", href: "/#reviews" },
+    { label: "Blog", href: "/blog" },
 ];
 
 const SOCIAL = [
@@ -34,13 +35,18 @@ const SOCIAL = [
 export default function Footer() {
     const handleScroll = (e) => {
         const href = e.currentTarget.getAttribute('href');
-        if (!href || !href.startsWith('#')) return;
+        if (!href) return;
 
-        e.preventDefault();
-        const targetId = href.substring(1);
+        let targetId = '';
+        if (href.startsWith('#')) targetId = href.substring(1);
+        else if (href.includes('#')) targetId = href.split('#')[1];
+
+        if (!targetId) return;
+
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
+            e.preventDefault();
             const headerOffset = 72;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -62,11 +68,11 @@ export default function Footer() {
                 <div className="flex flex-col gap-4">
                     <Link href="/" className="flex items-center gap-2.5 no-underline">
                         <Image
-                            src="/images/bed-bugs-boston-logo.png"
+                            src="/images/logo.png"
                             alt="Bed Bugs Boston Logo"
                             width={200}
                             height={200}
-                            className="h-[70px] w-auto"
+                            className="h-[130px] w-auto"
                         />
                         <span className="text-white text-base sm:text-lg font-black tracking-[1px] sm:tracking-[3px] uppercase">Bed Bugs Boston</span>
                     </Link>
@@ -94,14 +100,14 @@ export default function Footer() {
                         Quick Links
                     </h4>
                     {FOOTER_LINKS.map((item) => (
-                        <a
+                        <Link
                             key={item.label}
                             href={item.href}
                             onClick={handleScroll}
                             className="text-white/65 hover:text-white text-sm transition-colors duration-150 no-underline"
                         >
                             {item.label}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 
@@ -127,15 +133,20 @@ export default function Footer() {
                     </div>
 
                     {/* CTA */}
-                    <a
-                        href="#contact"
+                    <Link
+                        href="/#contact"
                         onClick={handleScroll}
                         className="mt-4 inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#0a802c] hover:bg-[#076622] text-white text-sm font-semibold transition-colors duration-200 no-underline"
                     >
                         Fill out the form for free inspection
-                    </a>
+                    </Link>
                 </div>
 
+            </div>
+
+            {/* ── Disclaimer Text ── */}
+            <div className="max-w-7xl mx-auto px-6 lg:px-16 pb-8 text-white/45 text-xs leading-relaxed text-center sm:text-left">
+                BedBugsBoston.us is not a pest control company. We are a free referral service that connects homeowners and businesses in Boston, MA with independent, licensed pest control professionals. By submitting your information, you consent to being contacted by one or more service providers. See our <Link href="/privacy-policy" className="underline hover:text-white transition-colors">Privacy Policy</Link> and <Link href="/disclaimer" className="underline hover:text-white transition-colors">Third-Party Disclaimer</Link> for details.
             </div>
 
             {/* ── Divider ── */}
@@ -145,7 +156,8 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/45 text-xs">
                 <p>© {new Date().getFullYear()} Boston. All rights reserved.</p>
                 <div className="flex items-center gap-5">
-                    <a href="#" className="hover:text-white transition-colors no-underline">Privacy Policy</a>
+                    <Link href="/privacy-policy" className="hover:text-white transition-colors no-underline">Privacy Policy</Link>
+                    <Link href="/disclaimer" className="hover:text-white transition-colors no-underline">Disclaimer</Link>
                     <a href="#" className="hover:text-white transition-colors no-underline">Terms of Service</a>
                     <a href="#" className="hover:text-white transition-colors no-underline">Sitemap</a>
                 </div>

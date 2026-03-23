@@ -2,15 +2,17 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const NAV_LINKS = [
-    { label: "Problem", href: "#problem" },
-    // { label: "Process", href: "#process" },
-    { label: "Treatments", href: "#treatments" },
-    { label: "Service Areas", href: "#areas-served" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Reviews", href: "#reviews" },
+    { label: "Problem", href: "/#problem" },
+    // { label: "Process", href: "/#process" },
+    { label: "Treatments", href: "/#treatments" },
+    { label: "Service Areas", href: "/#areas-served" },
+    { label: "FAQ", href: "/#faq" },
+    { label: "Reviews", href: "/#reviews" },
+    { label: "Blog", href: "/blog" },
 ];
 
 
@@ -35,6 +37,8 @@ export default function BostonHeader() {
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
+    const pathname = usePathname();
+    const isHomepage = pathname === "/";
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 10);
@@ -43,15 +47,19 @@ export default function BostonHeader() {
     }, []);
 
     const handleScroll = (e) => {
-        // Only handle links starting with #
         const href = e.currentTarget.getAttribute('href');
-        if (!href || !href.startsWith('#')) return;
+        if (!href) return;
+        
+        let targetId = '';
+        if (href.startsWith('#')) targetId = href.substring(1);
+        else if (href.includes('#')) targetId = href.split('#')[1];
+        
+        if (!targetId) return;
 
-        e.preventDefault();
-        const targetId = href.substring(1);
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
+            e.preventDefault();
             // Include small offset for the fixed header
             const headerOffset = 72;
             const elementPosition = targetElement.getBoundingClientRect().top;
@@ -74,7 +82,7 @@ export default function BostonHeader() {
 
             {/* ── Main Navbar ── */}
             <nav
-                className={`transition-all duration-300 ${scrolled
+                className={`transition-all duration-300 ${scrolled || !isHomepage
                     ? "bg-[#2a3a2a]/95 backdrop-blur-md shadow-xl"
                     : "bg-transparent"
                     }`}
@@ -84,12 +92,12 @@ export default function BostonHeader() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center mr-auto no-underline">
                         <Image
-                            src="/images/bed-bugs-boston-logo.png"
+                            src="/images/logo.png"
                             alt="Bed Bugs Boston Logo"
                             width={160}
                             height={160}
                             priority
-                            className="h-[70px] w-auto shrink-0"
+                            className="h-[120px] w-auto shrink-0"
                         />
                         <span className="text-white text-base sm:text-lg md:text-xl font-black tracking-[1px] sm:tracking-[2px] md:tracking-[3px] uppercase select-none leading-tight">
                             Bed Bugs Boston
@@ -100,25 +108,25 @@ export default function BostonHeader() {
                     <ul className="hidden lg:flex items-center gap-0.5 list-none m-0 p-0">
                         {NAV_LINKS.map((link) => (
                             <li key={link.label}>
-                                <a
+                                <Link
                                     href={link.href}
                                     onClick={handleScroll}
                                     className="flex items-center text-[#e8f5e9] hover:text-white text-[15px] font-medium px-4 py-2 rounded-lg hover:bg-white/10 transition-all duration-150 no-underline whitespace-nowrap"
                                 >
                                     {link.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
 
                     {/* Phone CTA */}
-                    <a
-                        href="#contact"
+                    <Link
+                        href="/#contact"
                         onClick={handleScroll}
                         className="hidden lg:inline-flex items-center ml-5 bg-[#0a802c] hover:bg-[#2d6a4f] text-white text-[15px] font-bold px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 no-underline whitespace-nowrap"
                     >
                         Fill out the form for free inspection
-                    </a>
+                    </Link>
 
 
 
@@ -141,23 +149,23 @@ export default function BostonHeader() {
                 >
                     <div className="flex flex-col px-6 pb-6 pt-2 gap-1">
                         {NAV_LINKS.map((link) => (
-                            <a
+                            <Link
                                 key={link.label}
                                 href={link.href}
                                 onClick={handleScroll}
                                 className="w-full flex items-center text-[#d8f3dc] text-base font-medium py-3 border-b border-white/10 hover:text-white transition-colors duration-150 no-underline"
                             >
                                 {link.label}
-                            </a>
+                            </Link>
                         ))}
 
-                        <a
-                            href="#contact"
+                        <Link
+                            href="/#contact"
                             onClick={handleScroll}
                             className="mt-4 flex justify-center bg-[#0a802c] hover:bg-[#2d6a4f] text-white font-bold py-3 rounded-full text-sm no-underline transition-colors duration-200"
                         >
                             Fill out the form for free inspection
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </nav>
