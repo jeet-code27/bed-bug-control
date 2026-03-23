@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import BlogPopup from "@/components/BlogPopup";
 
 export const metadata = {
   title: "Bed Bugs in Boston: The Hidden Infestation | Boston Pest",
@@ -64,6 +65,7 @@ const jsonLd = {
 export default function BlogPost() {
   return (
     <>
+      <BlogPopup />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
