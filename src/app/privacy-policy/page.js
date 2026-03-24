@@ -137,9 +137,9 @@ export default function PrivacyPolicy() {
           <p className="mb-4">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-100 mb-8">
             <p className="mb-2"><strong>BedBugsBoston.us</strong></p>
-            <p className="mb-1"><strong>Email:</strong> </p>
-            <p className="mb-1"><strong>Phone:</strong> </p>
-            <p><strong>Mailing Address:</strong> </p>
+            <p className="mb-1"><strong>Email:</strong> <a href="mailto:worcesterpestcontrol@gmail.com" className="text-[#0a802c] hover:underline">worcesterpestcontrol@gmail.com</a></p>
+            <p className="mb-1"><strong>Phone:</strong> N/A</p>
+            <p><strong>Mailing Address:</strong> 867 Boylston St Floor 5 PMB 275, Boston, MA 02116</p>
           </div>
         </div>
       </div>
