@@ -126,6 +126,13 @@ export default function Footer() {
                     </div>
                     <div className="flex items-start gap-3 text-sm text-white/65 mt-2">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 flex-shrink-0 text-[#0a802c]">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="M22 7l-10 7L2 7" />
+                        </svg>
+                        <a href="mailto:worcesterpestcontrol@gmail.com" className="hover:text-white transition-colors">worcesterpestcontrol@gmail.com</a>
+                    </div>
+                    <div className="flex items-start gap-3 text-sm text-white/65 mt-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 flex-shrink-0 text-[#0a802c]">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                             <circle cx="12" cy="10" r="3" />
                         </svg>
