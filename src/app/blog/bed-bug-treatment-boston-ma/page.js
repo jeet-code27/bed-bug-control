@@ -125,7 +125,7 @@ export default function BlogPost() {
 
           <h2 className="text-3xl lg:text-4xl font-black text-[#111] mt-16 mb-6">Are Bed Bugs Taking Over Your Boston Home</h2>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
-            Boston ranks among the top cities in the United States for bed bug infestations, and neighborhoods like Allston, Dorchester, Fenway, and South Boston are especially vulnerable due to dense housing and frequent move-ins.
+            Boston ranks among the top cities in the United States for bed bug infestations, and neighborhoods like Allston, Dorchester, Fenway, and South Boston are especially vulnerable due to <Link href="/blog/bed-bugs-in-boston-hidden-infestation" className="text-[#0a802c] hover:underline font-medium">dense housing and frequent move-ins</Link>.
           </p>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">If you’ve noticed:</p>
           <ul className="list-disc pl-8 mb-8 space-y-3 text-gray-700 text-lg">

@@ -83,6 +83,28 @@ const localBusinessSchema = {
   },
   "sameAs": [
     "https://bedbugsboston.us"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "128",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Sarah M."
+      },
+      "datePublished": "2025-10-12",
+      "reviewBody": "They came out exactly when they promised and eliminated our bed bug problem completely. Highly recommended in the Boston area.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    }
   ]
 };
 

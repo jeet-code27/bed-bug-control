@@ -151,7 +151,7 @@ export default function BlogPost() {
           <p className="text-gray-700 leading-relaxed text-lg mb-6">Boston has a unique mix of factors that make it especially vulnerable to infestations:</p>
           
           <h3 className="text-2xl font-bold text-[#111] mt-10 mb-4">1. High Population Density</h3>
-          <p className="text-gray-700 leading-relaxed text-lg mb-6">From triple-deckers in Dorchester to apartment complexes in Cambridge, Boston’s housing is tight and interconnected. Bed bugs easily travel between units through walls, pipes, and shared spaces.</p>
+          <p className="text-gray-700 leading-relaxed text-lg mb-6">From triple-deckers in Dorchester to apartment complexes in Cambridge, Boston’s housing is tight and interconnected. Bed bugs easily travel between units through walls, pipes, and shared spaces. This makes <Link href="/blog/bed-bug-treatment-boston-ma" className="text-[#0a802c] hover:underline font-medium">professional bed bug treatment</Link> critical for early containment.</p>
 
           <h3 className="text-2xl font-bold text-[#111] mt-10 mb-4">2. Student Turnover</h3>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">Areas like Allston, Brighton, and Fenway see thousands of students moving every year. Used furniture left on sidewalks, a common "Allston Christmas" phenomenon, is a major source of infestation.</p>

@@ -36,6 +36,10 @@ export default function sitemap() {
 
   const blogPosts = [
     {
+      slug: "why-boston-is-a-hotbed-for-bed-bugs",
+      lastModified: new Date("2026-03-26"),
+    },
+    {
       slug: "bed-bug-treatment-boston-ma",
       lastModified: new Date("2026-03-24"),
     },

@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://bedbugsboston.us"),
   title: "Bed Bug Exterminator Boston MA | Free Inspection",
   description: "Need bed bugs gone fast in Boston? We eliminate bed bugs in one treatment using heat + canine detection. Same-day service in Back Bay, South End, Cambridge & all Greater Boston. Fill out the form for a free inspection 24/7.",
   verification: {

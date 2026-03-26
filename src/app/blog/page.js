@@ -35,6 +35,15 @@ export const metadata = {
 
 const POSTS = [
   {
+    slug: "why-boston-is-a-hotbed-for-bed-bugs",
+    title: "Why Is Boston a Hotbed for Bed Bugs? Hotel Prevention Guide",
+    excerpt: "Boston ranks among the top 20 bed bug infested cities. Learn why bed bugs thrive in Boston and how hotels, Airbnbs, and inns can protect themselves.",
+    image: "/images/boston-hotel-bed-bug.webp",
+    date: "March 26, 2026",
+    readTime: "6 min read",
+    author: "Boston Pest Experts"
+  },
+  {
     slug: "bed-bug-treatment-boston-ma",
     title: "Fast, Professional Bed Bug Treatment in Boston and Surrounding Areas",
     excerpt: "If you’re dealing with bed bugs in your Boston home or apartment, you need immediate, expert help. Bed bugs spread fast, hide deep, and are nearly impossible to eliminate without professional treatment.",
