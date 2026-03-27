@@ -99,16 +99,26 @@ export default function Footer() {
                     <h4 className="text-[#c9de6b] text-xs font-bold tracking-[3px] uppercase mb-1">
                         Quick Links
                     </h4>
-                    {FOOTER_LINKS.map((item) => (
-                        <Link
-                            key={item.label}
-                            href={item.href}
-                            onClick={handleScroll}
-                            className="text-white/65 hover:text-white text-sm transition-colors duration-150 no-underline"
-                        >
-                            {item.label}
-                        </Link>
-                    ))}
+                    <ul className="flex flex-col gap-3">
+                        {FOOTER_LINKS.map((item) => (
+                            <li key={item.label}>
+                                <Link
+                                    href={item.href}
+                                    onClick={handleScroll}
+                                    className="hover:text-white transition-colors flex items-center gap-2 group text-sm no-underline"
+                                >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#0a802c] group-hover:bg-[#12b341] transition-colors" />
+                                    {item.label}
+                                </Link>
+                            </li>
+                        ))}
+                        <li>
+                            <Link href="/commercial-bed-bug-control-boston" className="hover:text-white transition-colors flex items-center gap-2 group text-sm no-underline">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#0a802c] group-hover:bg-[#12b341] transition-colors" />
+                                Commercial
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
 
                 {/* Contact */}

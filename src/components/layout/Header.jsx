@@ -6,12 +6,10 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const NAV_LINKS = [
-    { label: "Problem", href: "/#problem" },
-    // { label: "Process", href: "/#process" },
+    { label: "Home", href: "/" },
     { label: "Treatments", href: "/#treatments" },
-    { label: "Service Areas", href: "/#areas-served" },
+    { label: "Commercial", href: "/commercial-bed-bug-control-boston" },
     { label: "FAQ", href: "/#faq" },
-    { label: "Reviews", href: "/#reviews" },
     { label: "Blog", href: "/blog" },
 ];
 

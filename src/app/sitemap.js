@@ -23,8 +23,14 @@ export default function sitemap() {
     {
       url: `${BASE_URL}/disclaimer`,
       lastModified: new Date(),
-      changeFrequency: "yearly",
+      changeFrequency: "monthly",
       priority: 0.3,
+    },
+    {
+      url: `${BASE_URL}/commercial-bed-bug-control-boston`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     {
       url: `${BASE_URL}/contact`,
