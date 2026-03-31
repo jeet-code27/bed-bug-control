@@ -35,6 +35,15 @@ export const metadata = {
 
 const POSTS = [
   {
+    slug: "airbnb-bed-bug-control-boston",
+    title: "A Real Guide to Pest Control and Bed Bug Control for Airbnb Owners in Greater Boston",
+    excerpt: "Running an Airbnb in the Greater Boston area is solid money — unless bed bugs destroy your listing overnight. This guide covers prevention, guest incident response, costs, and the best professional services for short-term rental hosts.",
+    image: "/images/airbnb-bed-bug-boston.webp",
+    date: "March 31, 2026",
+    readTime: "8 min read",
+    author: "Boston Pest Experts"
+  },
+  {
     slug: "why-boston-is-a-hotbed-for-bed-bugs",
     title: "Why Is Boston a Hotbed for Bed Bugs? Hotel Prevention Guide",
     excerpt: "Boston ranks among the top 20 bed bug infested cities. Learn why bed bugs thrive in Boston and how hotels, Airbnbs, and inns can protect themselves.",
