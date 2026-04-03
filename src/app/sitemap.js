@@ -42,6 +42,14 @@ export default function sitemap() {
 
   const blogPosts = [
     {
+      slug: "bed-bugs-on-the-mbta-boston-t-prevention",
+      lastModified: new Date("2026-04-03"),
+    },
+    {
+      slug: "airbnb-bed-bug-control-boston",
+      lastModified: new Date("2026-03-31"),
+    },
+    {
       slug: "why-boston-is-a-hotbed-for-bed-bugs",
       lastModified: new Date("2026-03-26"),
     },

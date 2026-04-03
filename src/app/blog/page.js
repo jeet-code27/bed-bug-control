@@ -35,6 +35,15 @@ export const metadata = {
 
 const POSTS = [
   {
+    slug: "bed-bugs-on-the-mbta-boston-t-prevention",
+    title: "Bed Bugs on the T: Can You Bring Pests Home from the Boston Commuter Rail?",
+    excerpt: "You grab your coffee at North Station and squeeze into a packed Red Line car. But could you be bringing bed bugs home from your daily commute? Learn how Boston MBTA riders can protect themselves.",
+    image: "/images/boston-train-bed-bugs.webp",
+    date: "April 3, 2026",
+    readTime: "12 min read",
+    author: "Boston Pest Experts"
+  },
+  {
     slug: "airbnb-bed-bug-control-boston",
     title: "A Real Guide to Pest Control and Bed Bug Control for Airbnb Owners in Greater Boston",
     excerpt: "Running an Airbnb in the Greater Boston area is solid money — unless bed bugs destroy your listing overnight. This guide covers prevention, guest incident response, costs, and the best professional services for short-term rental hosts.",
