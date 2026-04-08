@@ -68,7 +68,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-4">
                     <Link href="/" className="flex items-center gap-2.5 no-underline">
                         <Image
-                            src="/images/logo.png"
+                            src="/images/bed-bug-boston-logo.png"
                             alt="Bed Bugs Boston Logo"
                             width={200}
                             height={200}

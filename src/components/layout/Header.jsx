@@ -90,7 +90,7 @@ export default function BostonHeader() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center mr-auto no-underline">
                         <Image
-                            src="/images/logo.png"
+                            src="/images/bed-bug-boston-logo.png"
                             alt="Bed Bugs Boston Logo"
                             width={160}
                             height={160}
