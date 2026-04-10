@@ -93,9 +93,9 @@ export default function BostonHeader() {
                             src="/images/bed-bug-boston-logo.png"
                             alt="Bed Bugs Boston Logo"
                             width={160}
-                            height={160}
+                            height={60}
                             priority
-                            className="h-[120px] w-auto shrink-0"
+                            className="h-[60px] w-auto shrink-0"
                         />
                         <span className="text-white text-base sm:text-lg md:text-xl font-black tracking-[1px] sm:tracking-[2px] md:tracking-[3px] uppercase select-none leading-tight">
                             Bed Bugs Boston
