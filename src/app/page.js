@@ -31,7 +31,7 @@ export const metadata = {
     siteName: "BedBugsBoston.us",
     images: [
       {
-        url: "/images/banner.jpg",
+        url: "/images/banner.webp",
         width: 1200,
         height: 630,
         alt: "Bed bug exterminator serving Boston MA",

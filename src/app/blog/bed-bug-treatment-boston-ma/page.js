@@ -6,7 +6,7 @@ export const metadata = {
   title: "Professional Bed Bug Treatment Boston MA | Fast & Safe",
   description: "Dealing with bed bugs in Boston? We provide fast, professional bed bug treatment in Boston, Cambridge, Somerville, and Quincy. Get a free inspection today.",
   keywords: "bed bug treatment Boston MA, bed bug exterminator Boston, professional bed bug removal Boston, emergency pest control Boston",
-  authors: [{ name: "Boston Pest Experts" }],
+  authors: [{ name: "Alex" }],
   publisher: "BedBugsBoston.us",
   alternates: {
     canonical: "https://bedbugsboston.us/blog/bed-bug-treatment-boston-ma",
@@ -35,6 +35,12 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-03-24T00:00:00.000Z",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Bed Bug Treatment Boston MA | Fast & Safe",
+    description: "Dealing with bed bugs in Boston? Fast, professional bed bug treatment in Boston, Cambridge, Somerville, and Quincy. Free inspection today.",
+    images: ["/images/bed-bug-exterminator-boston.webp"],
+  },
 };
 
 const jsonLd = {
@@ -43,8 +49,8 @@ const jsonLd = {
   "headline": "Fast, Professional Bed Bug Treatment in Boston and Surrounding Areas",
   "image": "/images/bed-bug-exterminator-boston.webp",
   "author": {
-    "@type": "Organization",
-    "name": "Boston Pest Experts",
+    "@type": "Person",
+    "name": "Alex",
     "url": "https://bedbugsboston.us"
   },
   "publisher": {
@@ -56,6 +62,7 @@ const jsonLd = {
     }
   },
   "datePublished": "2026-03-24",
+  "dateModified": "2026-03-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://bedbugsboston.us/blog/bed-bug-treatment-boston-ma"
@@ -88,7 +95,7 @@ export default function BlogPost() {
                 BP
               </div>
               <div className="text-left">
-                <p className="font-bold text-[#111]">Boston Pest Experts</p>
+                <p className="font-bold text-[#111]">Alex</p>
                 <p>March 24, 2026</p>
               </div>
             </div>
@@ -112,7 +119,7 @@ export default function BlogPost() {
         </div>
 
         {/* Article Body */}
-        <article className="max-w-7xl mx-auto px-6 lg:px-16 pb-16">
+        <article className="max-w-4xl mx-auto px-6 lg:px-16 pb-16">
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
             If you’re dealing with bed bugs in your Boston home or apartment, you need immediate, expert help. Bed bugs spread fast, hide deep, and are nearly impossible to eliminate without professional treatment.
           </p>
@@ -257,6 +264,14 @@ export default function BlogPost() {
             <Link href="/#contact" className="inline-block px-10 py-4 bg-[#0a802c] text-white font-bold text-lg rounded-xl hover:bg-[#086a24] transition-all duration-300 shadow-lg hover:shadow-[#0a802c]/30 hover:-translate-y-1">
               Get Your Free Custom Quote
             </Link>
+            <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+              <Link href="/blog/why-boston-is-a-hotbed-for-bed-bugs" className="hover:text-[#0a802c] hover:underline transition-colors">→ Why Boston Has a Bed Bug Problem</Link>
+              <Link href="/blog/bed-bugs-in-boston-hidden-infestation" className="hover:text-[#0a802c] hover:underline transition-colors">→ Boston&apos;s Hidden Infestation</Link>
+              <Link href="/blog/airbnb-bed-bug-control-boston" className="hover:text-[#0a802c] hover:underline transition-colors">→ Airbnb Bed Bug Guide</Link>
+              <Link href="/blog/get-rid-of-bed-bugs-without-throwing-away-furniture" className="hover:text-[#0a802c] hover:underline transition-colors">→ Save Your Furniture Guide</Link>
+              <Link href="/blog/bed-bugs-on-the-mbta-boston-t-prevention" className="hover:text-[#0a802c] hover:underline transition-colors">→ MBTA Commuter Guide</Link>
+              <Link href="/blog" className="hover:text-[#0a802c] hover:underline transition-colors">→ All Blog Posts</Link>
+            </div>
           </div>
         </article>
       </main>

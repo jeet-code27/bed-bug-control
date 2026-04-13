@@ -17,7 +17,7 @@ export const metadata = {
     "Can you get bed bugs on the T? Learn how Boston commuters can protect themselves from MBTA bed bugs and prevent infestations from public transit.",
   keywords:
     "bed bugs MBTA, bed bugs on the T Boston, MBTA bed bugs, bed bugs public transit Boston, Boston commuter bed bug prevention, bed bugs on subway Boston",
-  authors: [{ name: "Boston Pest Experts" }],
+  authors: [{ name: "Alex" }],
   publisher: "BedBugsBoston.us",
   alternates: {
     canonical:
@@ -48,6 +48,12 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-04-03T00:00:00.000Z",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bed Bugs on the T in Boston: MBTA Prevention Guide",
+    description: "Can you get bed bugs on the T? Learn how Boston commuters can protect themselves from MBTA bed bugs and prevent infestations from public transit.",
+    images: ["/images/boston-train-bed-bugs.webp"],
+  },
 };
 
 const articleSchema = {
@@ -57,8 +63,8 @@ const articleSchema = {
     "Bed Bugs on the T: Can You Bring Pests Home from the Boston Commuter Rail?",
   image: "/images/boston-train-bed-bugs.webp",
   author: {
-    "@type": "Organization",
-    name: "Boston Pest Experts",
+    "@type": "Person",
+    name: "Alex",
     url: "https://bedbugsboston.us",
   },
   publisher: {
@@ -70,6 +76,7 @@ const articleSchema = {
     },
   },
   datePublished: "2026-04-03",
+  dateModified: "2026-04-03",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
@@ -156,7 +163,7 @@ export default function BlogPost() {
                 BP
               </div>
               <div className="text-left">
-                <p className="font-bold text-[#111]">Boston Pest Experts</p>
+                <p className="font-bold text-[#111]">Alex</p>
                 <p>April 3, 2026</p>
               </div>
             </div>

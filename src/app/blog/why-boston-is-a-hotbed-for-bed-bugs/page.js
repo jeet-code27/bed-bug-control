@@ -5,8 +5,8 @@ import BlogPopup from "@/components/BlogPopup";
 export const metadata = {
   title: "Why Is Boston a Hotbed for Bed Bugs? Hotel Prevention Guide",
   description: "Boston ranks among the top 20 bed bug infested cities. Learn why bed bugs thrive in Boston and how hotels, Airbnbs, and inns can protect themselves.",
-  keywords: "Boston bed bugs, bed bugs in Boston hotels, Airbnb bed bug prevention Boston, Boston hospitality pest control, why does Boston have bed bugs",
-  authors: [{ name: "Boston Pest Experts" }],
+  keywords: "Boston bed bugs, bed bugs in Boston hotels, Airbnb bed bug prevention Boston, Boston hospitality pest control, why does Boston have bed bugs, bed bug exterminator Boston hotel",
+  authors: [{ name: "Alex" }],
   publisher: "BedBugsBoston.us",
   alternates: {
     canonical: "https://bedbugsboston.us/blog/why-boston-is-a-hotbed-for-bed-bugs",
@@ -35,16 +35,22 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-03-26T00:00:00.000Z",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Is Boston a Hotbed for Bed Bugs? Hotel Prevention Guide",
+    description: "Boston ranks among the top 20 bed bug infested cities. Learn why bed bugs thrive in Boston and how hotels, Airbnbs, and inns can protect themselves.",
+    images: ["/images/boston-hotel-bed-bug.webp"],
+  },
 };
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Why Is Boston Such a Hotbed for Bed Bugs and How Can Hotels Protect Themselves",
-  "image": "/images/boston-skyline.webp",
+  "image": "/images/boston-hotel-bed-bug.webp",
   "author": {
-    "@type": "Organization",
-    "name": "Boston Pest Experts",
+    "@type": "Person",
+    "name": "Alex",
     "url": "https://bedbugsboston.us"
   },
   "publisher": {
@@ -56,6 +62,7 @@ const articleSchema = {
     }
   },
   "datePublished": "2026-03-26",
+  "dateModified": "2026-03-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://bedbugsboston.us/blog/why-boston-is-a-hotbed-for-bed-bugs"
@@ -139,7 +146,7 @@ export default function BlogPost() {
                 BP
               </div>
               <div className="text-left">
-                <p className="font-bold text-[#111]">Boston Pest Experts</p>
+                <p className="font-bold text-[#111]">Alex</p>
                 <p>March 26, 2026</p>
               </div>
             </div>
@@ -162,7 +169,7 @@ export default function BlogPost() {
         </div>
 
         {/* Article Body */}
-        <article className="max-w-7xl mx-auto px-6 lg:px-16 pb-16">
+        <article className="max-w-4xl mx-auto px-6 lg:px-16 pb-16">
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
             Boston has earned a reputation no city wants. Year after year, it lands on the list of the most bed bug infested cities in the country. Orkin's 2024 rankings placed Boston in the top 20 for bed bug activity, and the problem is not slowing down. For hotels, inns, and Airbnb hosts, this is more than a nuisance. It is a direct threat to their business, their reviews, and their bottom line.
           </p>
@@ -287,10 +294,18 @@ export default function BlogPost() {
           {/* Internal Linking / CTA */}
           <div className="mt-16 p-10 bg-[#0a802c]/5 border border-[#0a802c]/20 rounded-3xl text-center shadow-sm">
             <h3 className="text-3xl font-black text-[#111] mt-0 mb-4">Protect Your Boston Hotel or Airbnb</h3>
-            <p className="mb-8 text-gray-700 text-lg max-w-2xl mx-auto">Don't risk your reputation. Connect with a licensed Boston pest control professional today for discreet, effective commercial bed bug services.</p>
+            <p className="mb-8 text-gray-700 text-lg max-w-2xl mx-auto">Don&apos;t risk your reputation. Connect with a licensed Boston pest control professional today for discreet, effective commercial bed bug services.</p>
             <Link href="/#contact" className="inline-block px-10 py-4 bg-[#0a802c] text-white font-bold text-lg rounded-xl hover:bg-[#086a24] transition-all duration-300 shadow-lg hover:shadow-[#0a802c]/30 hover:-translate-y-1">
               Get Your Free Commercial Quote
             </Link>
+            <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+              <Link href="/blog/bed-bug-treatment-boston-ma" className="hover:text-[#0a802c] hover:underline transition-colors">→ Bed Bug Treatment Boston MA</Link>
+              <Link href="/blog/airbnb-bed-bug-control-boston" className="hover:text-[#0a802c] hover:underline transition-colors">→ Airbnb Bed Bug Guide</Link>
+              <Link href="/blog/bed-bugs-in-boston-hidden-infestation" className="hover:text-[#0a802c] hover:underline transition-colors">→ Boston&apos;s Hidden Infestation</Link>
+              <Link href="/blog/bed-bugs-on-the-mbta-boston-t-prevention" className="hover:text-[#0a802c] hover:underline transition-colors">→ MBTA Commuter Guide</Link>
+              <Link href="/blog/get-rid-of-bed-bugs-without-throwing-away-furniture" className="hover:text-[#0a802c] hover:underline transition-colors">→ Save Your Furniture Guide</Link>
+              <Link href="/blog" className="hover:text-[#0a802c] hover:underline transition-colors">→ All Blog Posts</Link>
+            </div>
           </div>
         </article>
       </main>

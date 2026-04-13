@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "BedBugsBoston.us",
     images: [
       {
-        url: "/images/banner.jpg",
+        url: "/images/banner.webp",
         width: 1200,
         height: 630,
         alt: "Boston skyline",
@@ -34,6 +34,15 @@ export const metadata = {
 };
 
 const POSTS = [
+  {
+    slug: "get-rid-of-bed-bugs-without-throwing-away-furniture",
+    title: "Can I Get Rid of Bed Bugs Without Throwing Away My Furniture?",
+    excerpt: "Finding bed bugs in your Somerville triple-decker or Cambridge apartment is a nightmare. But you don't need to trash your furniture. Learn how professional treatment and smart DIY steps save your belongings and your wallet.",
+    image: "/images/bed-bug-exterminator-boston.webp",
+    date: "April 13, 2026",
+    readTime: "14 min read",
+    author: "Boston Pest Experts"
+  },
   {
     slug: "bed-bugs-on-the-mbta-boston-t-prevention",
     title: "Bed Bugs on the T: Can You Bring Pests Home from the Boston Commuter Rail?",

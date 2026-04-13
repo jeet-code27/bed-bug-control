@@ -6,7 +6,7 @@ export const metadata = {
   title: "Bed Bugs in Boston: The Hidden Infestation | Boston Pest",
   description: "Boston consistently appears on national bed bug infestation lists. Learn why Boston is a hotspot, what the impact is, and how to prevent and treat bed bugs.",
   keywords: "bed bugs Boston, Boston bed bug ranking, bed bug infestation Boston, pest control Boston, Cambridge bed bugs, Somerville bed bugs, Dorchester pest control",
-  authors: [{ name: "Boston Pest Experts" }],
+  authors: [{ name: "Alex" }],
   publisher: "BedBugsBoston.us",
   alternates: {
     canonical: "https://bedbugsboston.us/blog/bed-bugs-in-boston-hidden-infestation",
@@ -35,7 +35,14 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-03-23T00:00:00.000Z",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bed Bugs in Boston: The Hidden Infestation Impacting Beantown",
+    description: "Boston consistently appears on national bed bug infestation lists. Learn why Boston is a hotspot, what the impact is, and how to prevent and treat bed bugs.",
+    images: ["/images/boston-skyline.webp"],
+  },
 };
+
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -43,8 +50,8 @@ const jsonLd = {
   "headline": "Bed Bugs in Boston: The Hidden Infestation Impacting Beantown and Beyond",
   "image": "/images/boston-skyline.webp",
   "author": {
-    "@type": "Organization",
-    "name": "Boston Pest Experts",
+    "@type": "Person",
+    "name": "Alex",
     "url": "https://bedbugsboston.us"
   },
   "publisher": {
@@ -56,6 +63,7 @@ const jsonLd = {
     }
   },
   "datePublished": "2026-03-23",
+  "dateModified": "2026-03-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://bedbugsboston.us/blog/bed-bugs-in-boston-hidden-infestation"
@@ -88,7 +96,7 @@ export default function BlogPost() {
                 BP
               </div>
               <div className="text-left">
-                <p className="font-bold text-[#111]">Boston Pest Experts</p>
+                <p className="font-bold text-[#111]">Alex</p>
                 <p>March 23, 2026</p>
               </div>
             </div>
@@ -111,7 +119,7 @@ export default function BlogPost() {
         </div>
 
         {/* Article Body */}
-        <article className="max-w-7xl mx-auto px-6 lg:px-16 pb-16">
+        <article className="max-w-4xl mx-auto px-6 lg:px-16 pb-16">
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
             If you’ve ever woken up in your Back Bay apartment with mysterious bites or noticed tiny rust-colored stains on your sheets, you’re not alone. Bed bugs have quietly become one of the most persistent urban problems across Boston and its surrounding neighborhoods, from Cambridge and Somerville to Dorchester and Allston.
           </p>
@@ -286,10 +294,18 @@ export default function BlogPost() {
           {/* Internal Linking / CTA */}
           <div className="mt-20 p-10 bg-[#0a802c]/5 border border-[#0a802c]/20 rounded-3xl text-center shadow-sm">
             <h3 className="text-3xl font-black text-[#111] mt-0 mb-4">Are you dealing with an infestation?</h3>
-            <p className="mb-8 text-gray-700 text-lg max-w-2xl mx-auto">Don't wait for the problem to spread. Connect with a licensed Boston pest control professional today for a fast, effective solution.</p>
+            <p className="mb-8 text-gray-700 text-lg max-w-2xl mx-auto">Don&apos;t wait for the problem to spread. Connect with a licensed Boston pest control professional today for a fast, effective solution.</p>
             <Link href="/#contact" className="inline-block px-10 py-4 bg-[#0a802c] text-white font-bold text-lg rounded-xl hover:bg-[#086a24] transition-all duration-300 shadow-lg hover:shadow-[#0a802c]/30 hover:-translate-y-1">
               Get a Free Estimate
             </Link>
+            <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+              <Link href="/blog/bed-bug-treatment-boston-ma" className="hover:text-[#0a802c] hover:underline transition-colors">→ Bed Bug Treatment Boston MA</Link>
+              <Link href="/blog/why-boston-is-a-hotbed-for-bed-bugs" className="hover:text-[#0a802c] hover:underline transition-colors">→ Why Boston Has a Bed Bug Problem</Link>
+              <Link href="/blog/airbnb-bed-bug-control-boston" className="hover:text-[#0a802c] hover:underline transition-colors">→ Airbnb Bed Bug Guide</Link>
+              <Link href="/blog/get-rid-of-bed-bugs-without-throwing-away-furniture" className="hover:text-[#0a802c] hover:underline transition-colors">→ Save Your Furniture Guide</Link>
+              <Link href="/blog/bed-bugs-on-the-mbta-boston-t-prevention" className="hover:text-[#0a802c] hover:underline transition-colors">→ MBTA Commuter Guide</Link>
+              <Link href="/blog" className="hover:text-[#0a802c] hover:underline transition-colors">→ All Blog Posts</Link>
+            </div>
           </div>
         </article>
       </main>

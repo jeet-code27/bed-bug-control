@@ -15,32 +15,30 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/commercial-bed-bug-control-boston`,
+      lastModified: new Date("2026-04-01"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/privacy-policy`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-01"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${BASE_URL}/disclaimer`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      lastModified: new Date("2026-03-01"),
+      changeFrequency: "yearly",
       priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/commercial-bed-bug-control-boston`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
   ];
 
   const blogPosts = [
+    {
+      slug: "get-rid-of-bed-bugs-without-throwing-away-furniture",
+      lastModified: new Date("2026-04-13"),
+    },
     {
       slug: "bed-bugs-on-the-mbta-boston-t-prevention",
       lastModified: new Date("2026-04-03"),

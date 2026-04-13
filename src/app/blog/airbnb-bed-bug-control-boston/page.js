@@ -6,7 +6,7 @@ export const metadata = {
   title: "Airbnb Pest Control Boston: Bed Bug Guide for Hosts | BedBugsBoston.us",
   description: "Running an Airbnb in Greater Boston? Learn how to prevent bed bugs, handle guest complaints, and protect your revenue with professional pest control built for short-term rental owners.",
   keywords: "bed bug control Airbnb Boston, pest control Airbnb Boston, Airbnb bed bugs Greater Boston, bed bug inspection short term rental Boston, Boston Airbnb pest management",
-  authors: [{ name: "Boston Pest Experts" }],
+  authors: [{ name: "Alex" }],
   publisher: "BedBugsBoston.us",
   alternates: {
     canonical: "https://bedbugsboston.us/blog/airbnb-bed-bug-control-boston",
@@ -35,6 +35,12 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-03-31T00:00:00.000Z",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Airbnb Pest Control Boston: Bed Bug Guide for Hosts",
+    description: "Running an Airbnb in Greater Boston? Learn how to prevent bed bugs, handle guest complaints, and protect your revenue.",
+    images: ["/images/airbnb-bed-bug-boston.webp"],
+  },
 };
 
 const jsonLd = {
@@ -43,8 +49,8 @@ const jsonLd = {
   "headline": "A Real Guide to Pest Control and Bed Bug Control for Airbnb Owners in Greater Boston",
   "image": "/images/airbnb-bed-bug-boston.webp",
   "author": {
-    "@type": "Organization",
-    "name": "Boston Pest Experts",
+    "@type": "Person",
+    "name": "Alex",
     "url": "https://bedbugsboston.us"
   },
   "publisher": {
@@ -56,10 +62,50 @@ const jsonLd = {
     }
   },
   "datePublished": "2026-03-31",
+  "dateModified": "2026-03-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://bedbugsboston.us/blog/airbnb-bed-bug-control-boston"
   }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should Airbnb owners inspect for bed bugs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inspect during every guest turnover. At minimum, schedule a professional inspection every three months. High-turnover properties in Boston benefit from monthly professional inspections during peak travel season from May through October."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I treat bed bugs in my Airbnb myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over-the-counter sprays rarely solve the problem and can push bed bugs deeper into walls and furniture. Professional heat treatment is the most reliable method. DIY approaches often lead to repeat infestations and worse guest reviews."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a bed bug treatment take for a rental property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heat treatment typically takes 6 to 8 hours for a standard Boston apartment. Chemical treatments may require 2 to 3 visits over several weeks. Most hosts lose 3 to 7 days of bookings during the treatment and verification process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Airbnb hosts liable if a guest gets bed bug bites?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hosts can face liability if negligence is proven. Maintaining records of regular inspections and pest control services provides strong legal protection. Airbnb's Host Protection Insurance offers some coverage, but it does not replace proactive prevention."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -69,6 +115,10 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <main className="bg-white min-h-screen pt-32 pb-24">
@@ -88,7 +138,7 @@ export default function BlogPost() {
                 BP
               </div>
               <div className="text-left">
-                <p className="font-bold text-[#111]">Boston Pest Experts</p>
+                <p className="font-bold text-[#111]">Alex</p>
                 <p>March 31, 2026</p>
               </div>
             </div>
