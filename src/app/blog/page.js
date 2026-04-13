@@ -38,10 +38,10 @@ const POSTS = [
     slug: "get-rid-of-bed-bugs-without-throwing-away-furniture",
     title: "Can I Get Rid of Bed Bugs Without Throwing Away My Furniture?",
     excerpt: "Finding bed bugs in your Somerville triple-decker or Cambridge apartment is a nightmare. But you don't need to trash your furniture. Learn how professional treatment and smart DIY steps save your belongings and your wallet.",
-    image: "/images/bed-bug-exterminator-boston.webp",
+    image: "/images/bed-bug-furniture-save-boston.webp",
     date: "April 13, 2026",
     readTime: "14 min read",
-    author: "Boston Pest Experts"
+    author: "Alex"
   },
   {
     slug: "bed-bugs-on-the-mbta-boston-t-prevention",
@@ -50,7 +50,7 @@ const POSTS = [
     image: "/images/boston-train-bed-bugs.webp",
     date: "April 3, 2026",
     readTime: "12 min read",
-    author: "Boston Pest Experts"
+    author: "Alex"
   },
   {
     slug: "airbnb-bed-bug-control-boston",
@@ -59,7 +59,7 @@ const POSTS = [
     image: "/images/airbnb-bed-bug-boston.webp",
     date: "March 31, 2026",
     readTime: "8 min read",
-    author: "Boston Pest Experts"
+    author: "Alex"
   },
   {
     slug: "why-boston-is-a-hotbed-for-bed-bugs",
@@ -68,7 +68,7 @@ const POSTS = [
     image: "/images/boston-hotel-bed-bug.webp",
     date: "March 26, 2026",
     readTime: "6 min read",
-    author: "Boston Pest Experts"
+    author: "Alex"
   },
   {
     slug: "bed-bug-treatment-boston-ma",
@@ -77,7 +77,7 @@ const POSTS = [
     image: "/images/bed-bug-exterminator-boston.webp",
     date: "March 24, 2026",
     readTime: "4 min read",
-    author: "Boston Pest Experts"
+    author: "Alex"
   },
   {
     slug: "bed-bugs-in-boston-hidden-infestation",
@@ -86,7 +86,7 @@ const POSTS = [
     image: "/images/boston-skyline.webp",
     date: "March 23, 2026",
     readTime: "5 min read",
-    author: "Boston Pest Experts"
+    author: "Alex"
   }
 ];
 

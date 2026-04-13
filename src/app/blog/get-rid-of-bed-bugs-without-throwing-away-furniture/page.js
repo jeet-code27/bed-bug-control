@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import BlogPopup from "@/components/BlogPopup";
 import {
   Thermometer,
@@ -38,7 +39,7 @@ export const metadata = {
     siteName: "BedBugsBoston.us",
     images: [
       {
-        url: "/images/bed-bug-exterminator-boston.webp",
+        url: "/images/bed-bug-furniture-save-boston.webp",
         width: 1200,
         height: 630,
         alt: "Professional bed bug treatment saving furniture in Boston home",
@@ -52,38 +53,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Can I Get Rid of Bed Bugs Without Throwing Away My Furniture?",
     description: "Learn how to eliminate bed bugs in Greater Boston without ditching your furniture. Expert tips, treatment options, and local solutions that work.",
-    images: ["/images/bed-bug-exterminator-boston.webp"],
-  },
-};
-  alternates: {
-    canonical:
-      "https://bedbugsboston.us/blog/get-rid-of-bed-bugs-without-throwing-away-furniture",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-  openGraph: {
-    title:
-      "Can I Get Rid of Bed Bugs Without Throwing Away My Furniture?",
-    description:
-      "Learn how to eliminate bed bugs in Greater Boston without ditching your furniture. Expert tips, treatment options, and local solutions that work.",
-    url: "https://bedbugsboston.us/blog/get-rid-of-bed-bugs-without-throwing-away-furniture",
-    siteName: "BedBugsBoston.us",
-    images: [
-      {
-        url: "/images/bed-bug-exterminator-boston.webp",
-        width: 1200,
-        height: 630,
-        alt: "Professional bed bug treatment saving furniture in Boston home",
-      },
-    ],
-    locale: "en_US",
-    type: "article",
-    publishedTime: "2026-04-13T00:00:00.000Z",
+    images: ["/images/bed-bug-furniture-save-boston.webp"],
   },
 };
 
@@ -205,18 +175,14 @@ export default function BlogPost() {
 
         {/* Featured Image */}
         <div className="max-w-5xl mx-auto px-6 lg:px-16 mb-16">
-          <div className="relative w-full aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl bg-[#0a802c]/10 flex items-center justify-center">
-            <div className="text-center px-8">
-              <div className="w-20 h-20 rounded-full bg-[#0a802c]/20 flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-10 h-10 text-[#0a802c]" />
-              </div>
-              <p className="text-[#0a802c] font-bold text-xl">
-                Save Your Furniture — Beat the Bugs
-              </p>
-              <p className="text-gray-500 text-sm mt-2">
-                Professional Bed Bug Treatment · Greater Boston Area
-              </p>
-            </div>
+          <div className="relative w-full aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl">
+            <Image
+              src="/images/bed-bug-furniture-save-boston.webp"
+              alt="Professional bed bug treatment saving furniture in Boston home"
+              fill
+              className="object-fit"
+              priority
+            />
           </div>
         </div>
 
