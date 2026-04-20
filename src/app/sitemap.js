@@ -36,6 +36,10 @@ export default function sitemap() {
 
   const blogPosts = [
     {
+      slug: "how-did-i-get-bed-bugs-in-boston",
+      lastModified: new Date("2026-04-20"),
+    },
+    {
       slug: "get-rid-of-bed-bugs-without-throwing-away-furniture",
       lastModified: new Date("2026-04-13"),
     },

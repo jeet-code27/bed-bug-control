@@ -632,7 +632,7 @@ export default function BlogPost() {
             Visitors to Your Home: Friends or family with home infestations can unknowingly bring bugs when they visit.
           </p>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
-            Public transit ranks somewhere in the middle of this risk spectrum. Worth being aware of, but not worth avoiding entirely.
+            Public transit ranks somewhere in the middle of this risk spectrum. Worth being aware of, but not worth avoiding entirely. Want to learn more about how they spread? Read our guide on <Link href="/blog/how-did-i-get-bed-bugs-in-boston" className="text-[#0a802c] font-medium hover:underline">7 ways bed bugs enter clean homes</Link>.
           </p>
 
           <h2 className="text-3xl lg:text-4xl font-black text-[#111] mt-16 mb-6">

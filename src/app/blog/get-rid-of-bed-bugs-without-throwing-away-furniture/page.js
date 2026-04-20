@@ -249,7 +249,13 @@ export default function BlogPost() {
             >
               Boston&apos;s hidden bed bug infestation
             </Link>{" "}
-            to understand the full scope of the problem.
+            to understand the full scope of the problem. You might also be wondering, {" "}
+            <Link
+              href="/blog/how-did-i-get-bed-bugs-in-boston"
+              className="text-[#0a802c] font-medium hover:underline"
+            >
+              how did I get bed bugs in my clean home?
+            </Link>
           </p>
 
           {/* Why Throwing Away Furniture Doesn't Always Work */}

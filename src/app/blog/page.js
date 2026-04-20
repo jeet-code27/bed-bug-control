@@ -35,6 +35,15 @@ export const metadata = {
 
 const POSTS = [
   {
+    slug: "how-did-i-get-bed-bugs-in-boston",
+    title: "How Did I Get Bed Bugs? 7 Ways They Enter Boston Homes",
+    excerpt: "Discover how bed bugs enter clean Boston homes through travel, furniture, and guests. Learn prevention tips and find professional help to eliminate infestations.",
+    image: "/images/boston-dense-housing.webp",
+    date: "April 20, 2026",
+    readTime: "10 min read",
+    author: "Alex"
+  },
+  {
     slug: "get-rid-of-bed-bugs-without-throwing-away-furniture",
     title: "Can I Get Rid of Bed Bugs Without Throwing Away My Furniture?",
     excerpt: "Finding bed bugs in your Somerville triple-decker or Cambridge apartment is a nightmare. But you don't need to trash your furniture. Learn how professional treatment and smart DIY steps save your belongings and your wallet.",
