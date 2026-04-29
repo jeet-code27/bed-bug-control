@@ -36,6 +36,10 @@ export default function sitemap() {
 
   const blogPosts = [
     {
+      slug: "does-summer-heat-kill-bed-bugs-in-boston",
+      lastModified: new Date("2026-04-29"),
+    },
+    {
       slug: "how-did-i-get-bed-bugs-in-boston",
       lastModified: new Date("2026-04-20"),
     },

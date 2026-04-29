@@ -35,6 +35,15 @@ export const metadata = {
 
 const POSTS = [
   {
+    slug: "does-summer-heat-kill-bed-bugs-in-boston",
+    title: "Bed Bugs in Boston Area: Does Summer Heat Kill Them?",
+    excerpt: "Discover if Boston summer heat kills bed bugs. Learn about steam heat treatment, prevention tips, and professional pest control for the Central Massachusetts area.",
+    image: "/images/bed-bug-banner-5.webp",
+    date: "April 29, 2026",
+    readTime: "8 min read",
+    author: "Alex"
+  },
+  {
     slug: "how-did-i-get-bed-bugs-in-boston",
     title: "How Did I Get Bed Bugs? 7 Ways They Enter Boston Homes",
     excerpt: "Discover how bed bugs enter clean Boston homes through travel, furniture, and guests. Learn prevention tips and find professional help to eliminate infestations.",
