@@ -6,6 +6,7 @@ import Image from "next/image";
 
 
 const FOOTER_LINKS = [
+    { label: "Home", href: "/" },
     { label: "Problem", href: "/#problem" },
     // { label: "Process", href: "/#process" },
     { label: "Treatments", href: "/#treatments" },

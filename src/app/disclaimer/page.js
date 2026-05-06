@@ -1,6 +1,13 @@
 export const metadata = {
   title: 'Third-Party Disclaimer | BedBugsBoston.us',
-  description: 'Third-Party Disclaimer for BedBugsBoston.us',
+  description: 'Third-Party Disclaimer for BedBugsBoston.us — understand our role as a referral service and our relationship with third-party pest control providers.',
+  alternates: {
+    canonical: 'https://bedbugsboston.us/disclaimer',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Disclaimer() {

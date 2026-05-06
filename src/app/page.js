@@ -73,7 +73,19 @@ const localBusinessSchema = {
     { "@type": "City", "name": "Newton" },
     { "@type": "City", "name": "Waltham" }
   ],
-  "serviceType": "Bed Bug Extermination Referral",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Bed Bug Extermination Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bed Bug Extermination Referral"
+        }
+      }
+    ]
+  },
   "priceRange": "Free Inspection",
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",

@@ -1,6 +1,13 @@
 export const metadata = {
   title: 'Privacy Policy | BedBugsBoston.us',
-  description: 'Privacy Policy for BedBugsBoston.us',
+  description: 'Privacy Policy for BedBugsBoston.us — learn how we collect, use, and protect your personal information.',
+  alternates: {
+    canonical: 'https://bedbugsboston.us/privacy-policy',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicy() {

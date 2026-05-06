@@ -33,16 +33,17 @@ export const metadata = {
   },
 };
 
+const FEATURED_POST = {
+  slug: "does-summer-heat-kill-bed-bugs-in-boston",
+  title: "Bed Bugs in Boston Area: Does Summer Heat Kill Them?",
+  excerpt: "Every summer, Boston residents ask the same question: does the heat take care of bed bugs? The short answer: not even close. Learn why summer actually makes infestations worse — and what treatment actually works.",
+  image: "/images/bed-bug-banner-5.webp",
+  date: "April 29, 2026",
+  readTime: "8 min read",
+  author: "Alex",
+};
+
 const POSTS = [
-  {
-    slug: "does-summer-heat-kill-bed-bugs-in-boston",
-    title: "Bed Bugs in Boston Area: Does Summer Heat Kill Them?",
-    excerpt: "Discover if Boston summer heat kills bed bugs. Learn about steam heat treatment, prevention tips, and professional pest control for the Central Massachusetts area.",
-    image: "/images/bed-bug-banner-5.webp",
-    date: "April 29, 2026",
-    readTime: "8 min read",
-    author: "Alex"
-  },
   {
     slug: "how-did-i-get-bed-bugs-in-boston",
     title: "How Did I Get Bed Bugs? 7 Ways They Enter Boston Homes",
@@ -91,7 +92,7 @@ const POSTS = [
   {
     slug: "bed-bug-treatment-boston-ma",
     title: "Fast, Professional Bed Bug Treatment in Boston and Surrounding Areas",
-    excerpt: "If you’re dealing with bed bugs in your Boston home or apartment, you need immediate, expert help. Bed bugs spread fast, hide deep, and are nearly impossible to eliminate without professional treatment.",
+    excerpt: "If you're dealing with bed bugs in your Boston home or apartment, you need immediate, expert help. Bed bugs spread fast, hide deep, and are nearly impossible to eliminate without professional treatment.",
     image: "/images/bed-bug-exterminator-boston.webp",
     date: "March 24, 2026",
     readTime: "4 min read",
@@ -100,7 +101,7 @@ const POSTS = [
   {
     slug: "bed-bugs-in-boston-hidden-infestation",
     title: "Bed Bugs in Boston: The Hidden Infestation Impacting Beantown and Beyond",
-    excerpt: "If you’ve ever woken up in your Back Bay apartment with mysterious bites or noticed tiny rust-colored stains on your sheets, you’re not alone. Bed bugs have quietly become one of the most persistent urban problems across Boston.",
+    excerpt: "If you've ever woken up in your Back Bay apartment with mysterious bites or noticed tiny rust-colored stains on your sheets, you're not alone. Bed bugs have quietly become one of the most persistent urban problems across Boston.",
     image: "/images/boston-skyline.webp",
     date: "March 23, 2026",
     readTime: "5 min read",
@@ -123,7 +124,48 @@ export default function BlogListing() {
           </p>
         </div>
 
+        {/* Featured Post */}
+        <div className="mb-16">
+          <p className="text-xs font-bold tracking-[3px] uppercase text-[#0a802c] mb-4">Featured Article</p>
+          <Link href={`/blog/${FEATURED_POST.slug}`} className="group block">
+            <article className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 grid grid-cols-1 lg:grid-cols-2">
+              <div className="relative h-64 lg:h-full w-full overflow-hidden min-h-[280px]">
+                <Image
+                  src={FEATURED_POST.image}
+                  alt={FEATURED_POST.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  priority
+                />
+                <div className="absolute top-4 left-4 bg-[#0a802c] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                  Featured
+                </div>
+              </div>
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="flex items-center gap-3 text-xs text-gray-400 font-medium mb-4">
+                  <span>{FEATURED_POST.date}</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-300"></span>
+                  <span>{FEATURED_POST.readTime}</span>
+                </div>
+                <h2 className="text-2xl lg:text-3xl font-black text-[#111] leading-snug mb-4 group-hover:text-[#0a802c] transition-colors">
+                  {FEATURED_POST.title}
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  {FEATURED_POST.excerpt}
+                </p>
+                <div className="flex items-center text-[#0a802c] font-semibold text-sm">
+                  Read Full Article
+                  <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </div>
+              </div>
+            </article>
+          </Link>
+        </div>
+
         {/* Blog Grid */}
+        <p className="text-xs font-bold tracking-[3px] uppercase text-gray-400 mb-6">More Articles</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {POSTS.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
