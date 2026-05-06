@@ -412,6 +412,51 @@ export default function CommercialLandingPage() {
         </div>
       </section>
 
+      {/* SEO Content Section — Increases text-to-HTML ratio */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 lg:px-16">
+          <h2 className="text-3xl font-black text-[#111] mb-8">Commercial Bed Bug Control in Boston: What Property Managers Need to Know</h2>
+
+          <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+            Managing a commercial property or multi-unit residential building in Boston comes with significant responsibility when it comes to pest control — especially bed bugs. Under Massachusetts General Law and Boston&apos;s Sanitary Code (105 CMR 410.000), landlords and property managers are legally required to maintain rental units free of pest infestations. Failure to address a documented bed bug problem can result in code violations, tenant legal action, and forced relocation of residents at the landlord&apos;s expense.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+            The challenge with commercial properties is that bed bugs spread rapidly between units through shared wall voids, electrical conduit, plumbing chases, and common hallways. A single report in one apartment can mean the infestation has already reached two or three adjacent units. The longer you wait to act, the more expensive and disruptive the treatment becomes.
+          </p>
+
+          <h3 className="text-2xl font-bold text-[#111] mb-4 mt-10">The Hidden Cost of Delayed Action</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Property managers who delay treatment often find themselves facing far greater costs than the original treatment would have required. Consider the compounding consequences:
+          </p>
+          <ul className="space-y-3 text-gray-700 mb-8">
+            <li className="flex items-start gap-3"><span className="text-[#0a802c] font-bold text-lg mt-0.5">•</span><span><strong>Tenant relocation costs:</strong> If an infestation is severe, tenants may have legal grounds to withhold rent or demand relocation at your expense while treatment occurs.</span></li>
+            <li className="flex items-start gap-3"><span className="text-[#0a802c] font-bold text-lg mt-0.5">•</span><span><strong>Multi-unit treatment escalation:</strong> A one-unit treatment averages $300–$800. A building-wide treatment for a 10-unit property can exceed $8,000–$15,000.</span></li>
+            <li className="flex items-start gap-3"><span className="text-[#0a802c] font-bold text-lg mt-0.5">•</span><span><strong>Reputation damage:</strong> Online reviews mentioning bed bugs can devastate occupancy rates, especially for hotels, Airbnbs, and student housing properties.</span></li>
+            <li className="flex items-start gap-3"><span className="text-[#0a802c] font-bold text-lg mt-0.5">•</span><span><strong>Health code violations:</strong> Boston inspectors can issue violations requiring emergency remediation, including mandatory disclosure to prospective tenants.</span></li>
+          </ul>
+
+          <h3 className="text-2xl font-bold text-[#111] mb-4">Why Boston Properties Are Especially Vulnerable</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Boston&apos;s housing stock is one of the oldest in the United States. Triple-deckers, brownstones, Victorian row houses, and prewar apartment buildings make up the majority of the city&apos;s residential rental inventory. These older structures have more cracks, gaps, and shared infrastructure than modern construction — all of which make it significantly easier for bed bugs to travel between units undetected.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Additionally, Boston&apos;s position as a major international travel hub, home to multiple world-class universities and hospitals, means that residents and guests regularly arrive from cities and countries with high bed bug prevalence. Hotels and short-term rentals near Fenway Park, the Back Bay, Downtown Crossing, and Cambridge&apos;s university district face some of the highest risk in New England.
+          </p>
+
+          <h3 className="text-2xl font-bold text-[#111] mb-4">Our Recommended Protocol for Commercial Properties</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            For property managers, we recommend a structured response plan the moment a tenant reports a potential infestation. A licensed inspector should assess not only the reported unit but all adjacent units — above, below, and side by side. Early containment is the most cost-effective strategy available.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            For hotels and short-term rentals, we recommend quarterly preventive inspections for high-risk room categories, staff training on early identification signs, and a documented response protocol that can be presented to guests or health inspectors if needed.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            BedBugsBoston.us connects commercial property owners and managers with licensed, insured pest control professionals across Greater Boston who specialize in commercial-scale bed bug programs. <Link href="/#contact" className="text-[#0a802c] font-semibold hover:underline">Get in touch today for a free commercial risk assessment.</Link>
+          </p>
+        </div>
+      </section>
+
       <ReviewsSlider />
       <PeaceOfMind />
 

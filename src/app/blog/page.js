@@ -115,12 +115,26 @@ export default function BlogListing() {
       <div className="max-w-7xl mx-auto px-6 lg:px-16">
         
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-[#111] mb-6">
             Pest Control <span className="text-[#0a802c]">Insights & News</span>
           </h1>
           <p className="text-lg text-gray-600">
             Expert advice, local news, and comprehensive guides to protecting your Boston home from bed bugs and other pests.
+          </p>
+        </div>
+
+        {/* SEO Intro Text Block */}
+        <div className="max-w-4xl mx-auto mb-16 bg-white rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm">
+          <h2 className="text-2xl font-black text-[#111] mb-4">Boston&apos;s Most Trusted Bed Bug Resource</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Bed bugs are one of the fastest-growing pest problems across Greater Boston and all of Massachusetts. From Back Bay brownstones to Somerville triple-deckers, no neighborhood is immune. Our blog is dedicated to giving Boston homeowners, renters, landlords, and property managers the real, practical information they need to identify, prevent, and eliminate bed bug infestations — without the guesswork.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Each article is written with the specific challenges of New England housing in mind. Boston&apos;s older building stock, dense urban neighborhoods, active college population, and heavy tourism all create unique conditions that make bed bug prevention more complicated — and more critical — than in many other cities. Whether you live in a luxury condo in the Seaport or a multi-family home in Dorchester, our guides cover the situations real Bostonians face every day.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Browse our latest articles below. If you suspect an active infestation, do not wait — <Link href="/#contact" className="text-[#0a802c] font-semibold hover:underline">fill out our free inspection form</Link> and get connected with a licensed Boston-area professional within 48 hours.
           </p>
         </div>
 
@@ -203,6 +217,52 @@ export default function BlogListing() {
               </article>
             </Link>
           ))}
+        </div>
+
+        {/* SEO Text Section — Raises text-to-HTML ratio */}
+        <div className="mt-20 max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm mb-8">
+            <h2 className="text-2xl font-black text-[#111] mb-6">Understanding Bed Bugs in the Greater Boston Area</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Boston consistently ranks among the top cities in the United States for bed bug infestations, according to annual reports from national pest control associations. The combination of a dense urban population, heavy international travel through Logan Airport, a large student population across dozens of colleges and universities, and a thriving short-term rental market makes Greater Boston one of the most active bed bug markets in the country.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bed bugs are not a sign of an unclean home. They are opportunistic hitchhikers that travel on luggage, clothing, used furniture, and even public transit. Once inside a Boston apartment or home, they reproduce quickly — a single female bed bug can lay up to 500 eggs in her lifetime. Without professional treatment, a small infestation can become a building-wide problem within weeks.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              The good news is that modern pest control technology has made bed bug elimination faster, safer, and more effective than ever before. Steam heat treatment, biological solutions like Aprehend, and targeted chemical programs can eliminate infestations at every life stage — including eggs — in a single visit in most cases.
+            </p>
+
+            <h3 className="text-xl font-bold text-[#111] mb-4">Signs You May Have Bed Bugs</h3>
+            <ul className="space-y-2 text-gray-700 mb-6">
+              <li className="flex items-start gap-2"><span className="text-[#0a802c] font-bold mt-1">•</span> Red, itchy welts on your skin — often in a line or cluster — that appear overnight</li>
+              <li className="flex items-start gap-2"><span className="text-[#0a802c] font-bold mt-1">•</span> Tiny rust-colored or dark brown stains on your mattress seams, sheets, or pillowcases</li>
+              <li className="flex items-start gap-2"><span className="text-[#0a802c] font-bold mt-1">•</span> Small white eggs or shed skins in mattress folds, behind headboards, or along baseboards</li>
+              <li className="flex items-start gap-2"><span className="text-[#0a802c] font-bold mt-1">•</span> A faint, sweet musty odor in heavily infested rooms</li>
+              <li className="flex items-start gap-2"><span className="text-[#0a802c] font-bold mt-1">•</span> Live bugs — apple seed-sized, flat, and reddish-brown — near the bed frame or furniture seams</li>
+            </ul>
+
+            <h3 className="text-xl font-bold text-[#111] mb-4">Why Professional Treatment Is Always Recommended</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Over-the-counter bed bug sprays and DIY heat methods rarely eliminate a full infestation. Bed bugs are highly resilient and have developed resistance to many common pesticide compounds. More importantly, they hide deep inside wall voids, electrical outlets, mattress interiors, and furniture frames — places consumer products simply cannot reach effectively.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Professional exterminators use commercial-grade equipment and proven protocols that ensure complete elimination. Many Boston-area professionals also offer follow-up inspections to confirm the infestation is fully resolved. <Link href="/#contact" className="text-[#0a802c] font-semibold hover:underline">Contact us for a free inspection today.</Link>
+            </p>
+          </div>
+
+          <div className="bg-[#0a802c]/5 border border-[#0a802c]/20 rounded-3xl p-8 text-center">
+            <h3 className="text-2xl font-black text-[#111] mb-3">Get a Free Bed Bug Inspection in Boston</h3>
+            <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+              Serving Back Bay, South End, Cambridge, Somerville, Brookline, Quincy, Newton, Waltham, and all of Greater Boston. Available 7 days a week, including same-day response for urgent cases.
+            </p>
+            <Link
+              href="/#contact"
+              className="inline-block bg-[#0a802c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#086a24] transition-all duration-300 shadow-lg hover:-translate-y-1"
+            >
+              Fill Out the Form — It&apos;s Free
+            </Link>
+          </div>
         </div>
 
       </div>
